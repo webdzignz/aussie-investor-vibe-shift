@@ -8,6 +8,7 @@ const MarketData = () => {
       bank: "Deutsche Bank",
       logo: "DB",
       logoColor: "bg-blue-600",
+      cardColor: "bg-blue-50 border-blue-100",
       name: "Deutsche Bank 10%",
       yield: "10%",
       rating: "A-",
@@ -20,6 +21,7 @@ const MarketData = () => {
       bank: "Barclays",
       logo: "BC",
       logoColor: "bg-blue-500",
+      cardColor: "bg-blue-50 border-blue-100",
       name: "Barclays 9.625%",
       yield: "9.625%",
       rating: "A",
@@ -32,6 +34,7 @@ const MarketData = () => {
       bank: "Santander",
       logo: "ST",
       logoColor: "bg-red-600",
+      cardColor: "bg-red-50 border-red-100",
       name: "Santander 9.625%",
       yield: "9.625%",
       rating: "A",
@@ -44,6 +47,7 @@ const MarketData = () => {
       bank: "UBS",
       logo: "UBS",
       logoColor: "bg-red-700",
+      cardColor: "bg-red-50 border-red-100",
       name: "UBS 9.016%",
       yield: "9.016%",
       rating: "A",
@@ -56,6 +60,7 @@ const MarketData = () => {
       bank: "JP Morgan",
       logo: "JPM",
       logoColor: "bg-blue-800",
+      cardColor: "bg-blue-50 border-blue-100",
       name: "JP Morgan 8.75%",
       yield: "8.75%",
       rating: "BBB+",
@@ -83,7 +88,7 @@ const MarketData = () => {
             <Card 
               key={index} 
               id={`bond-${bond.id}`}
-              className="shadow-lg border-gold/10 hover:shadow-xl transition-all duration-300"
+              className={`shadow-lg ${bond.cardColor} hover:shadow-xl transition-all duration-300`}
             >
               <CardHeader className="pb-3">
                 <div className="flex items-center justify-between mb-2">
