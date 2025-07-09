@@ -1,4 +1,3 @@
-
 import { Button } from "@/components/ui/button";
 import { User, Menu } from "lucide-react";
 
@@ -23,7 +22,7 @@ const AustraliaOutline = () => (
 
 const Header = () => {
   return (
-    <header className="bg-black border-b border-gray-800 shadow-sm">
+    <header className="bg-black border-b border-gray-800 shadow-sm rounded-2xl m-4">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
           <div className="flex items-center space-x-4">
