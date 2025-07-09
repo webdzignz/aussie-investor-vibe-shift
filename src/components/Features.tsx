@@ -4,7 +4,7 @@ import { BarChart3, PieChart, TrendingUp, Shield, Smartphone, BookOpen } from "l
 import { useState, useEffect } from "react";
 
 const Features = () => {
-  const [currentCardIndex, setCurrentCardIndex] = useState(0);
+  const [currentGroupIndex, setCurrentGroupIndex] = useState(0);
 
   const features = [
     {
@@ -39,15 +39,21 @@ const Features = () => {
     }
   ];
 
+  // Group features into sets of 3
+  const featureGroups = [
+    features.slice(0, 3),
+    features.slice(3, 6)
+  ];
+
   useEffect(() => {
     const interval = setInterval(() => {
-      setCurrentCardIndex((prev) => (prev + 1) % features.length);
+      setCurrentGroupIndex((prev) => (prev + 1) % featureGroups.length);
     }, 5000);
 
     return () => clearInterval(interval);
-  }, [features.length]);
+  }, [featureGroups.length]);
 
-  const currentFeature = features[currentCardIndex];
+  const currentFeatures = featureGroups[currentGroupIndex];
 
   return (
     <section className="py-20 bg-white">
@@ -62,27 +68,30 @@ const Features = () => {
           </p>
         </div>
         
-        <div className="flex justify-center">
-          <div className="w-full max-w-md overflow-hidden relative">
-            <Card 
-              key={currentCardIndex}
-              className="border-0 shadow-lg hover:shadow-xl transition-all duration-1000 border-gold/20 animate-slide-in-right"
-            >
-              <CardHeader className="text-center pb-4">
-                <div className="w-16 h-16 gold-gradient rounded-2xl flex items-center justify-center mx-auto mb-4">
-                  <currentFeature.icon className="w-8 h-8 text-white" />
-                </div>
-                <CardTitle className="text-xl font-semibold text-gray-900">
-                  {currentFeature.title}
-                </CardTitle>
-              </CardHeader>
-              <CardContent className="text-center">
-                <p className="text-gray-600 leading-relaxed">
-                  {currentFeature.description}
-                </p>
-              </CardContent>
-            </Card>
-          </div>
+        <div className="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto">
+          {currentFeatures.map((feature, index) => {
+            const IconComponent = feature.icon;
+            return (
+              <Card 
+                key={`${currentGroupIndex}-${index}`}
+                className="border-0 shadow-lg hover:shadow-xl transition-all duration-1000 border-gold/20 animate-fade-in"
+              >
+                <CardHeader className="text-center pb-4">
+                  <div className="w-16 h-16 gold-gradient rounded-2xl flex items-center justify-center mx-auto mb-4">
+                    <IconComponent className="w-8 h-8 text-white" />
+                  </div>
+                  <CardTitle className="text-xl font-semibold text-gray-900">
+                    {feature.title}
+                  </CardTitle>
+                </CardHeader>
+                <CardContent className="text-center">
+                  <p className="text-gray-600 leading-relaxed">
+                    {feature.description}
+                  </p>
+                </CardContent>
+              </Card>
+            );
+          })}
         </div>
       </div>
     </section>
