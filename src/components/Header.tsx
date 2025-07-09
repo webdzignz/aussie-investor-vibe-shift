@@ -1,3 +1,4 @@
+
 import { Button } from "@/components/ui/button";
 import { User, Menu } from "lucide-react";
 
@@ -35,11 +36,9 @@ const Header = () => {
           </div>
           
           <nav className="hidden md:flex items-center space-x-8">
-            <a href="#" className="text-gray-300 hover:text-white transition-colors">Dashboard</a>
-            <a href="#" className="text-gray-300 hover:text-white transition-colors">Portfolio</a>
-            <a href="#" className="text-gray-300 hover:text-white transition-colors">Markets</a>
-            <a href="#" className="text-gray-300 hover:text-white transition-colors">Research</a>
-            <a href="#" className="text-gray-300 hover:text-white transition-colors">Education</a>
+            <a href="#" className="text-gray-300 hover:text-white transition-colors">Introduction</a>
+            <a href="#" className="text-gray-300 hover:text-white transition-colors">Products</a>
+            <a href="#" className="text-gray-300 hover:text-white transition-colors">Contact Us</a>
           </nav>
 
           <div className="flex items-center space-x-4">
