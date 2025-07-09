@@ -4,7 +4,7 @@ import { BarChart3, PieChart, TrendingUp, Shield, Smartphone, BookOpen } from "l
 import { useState, useEffect } from "react";
 
 const Features = () => {
-  const [visibleCards, setVisibleCards] = useState(0);
+  const [currentCardIndex, setCurrentCardIndex] = useState(0);
 
   const features = [
     {
@@ -41,16 +41,13 @@ const Features = () => {
 
   useEffect(() => {
     const interval = setInterval(() => {
-      setVisibleCards((prev) => {
-        if (prev < features.length) {
-          return prev + 1;
-        }
-        return prev;
-      });
+      setCurrentCardIndex((prev) => (prev + 1) % features.length);
     }, 5000);
 
     return () => clearInterval(interval);
   }, [features.length]);
+
+  const currentFeature = features[currentCardIndex];
 
   return (
     <section className="py-20 bg-white">
@@ -65,31 +62,27 @@ const Features = () => {
           </p>
         </div>
         
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {features.map((feature, index) => (
+        <div className="flex justify-center">
+          <div className="w-full max-w-md overflow-hidden relative">
             <Card 
-              key={index} 
-              className={`border-0 shadow-lg hover:shadow-xl transition-all duration-500 border-gold/20 ${
-                index < visibleCards 
-                  ? 'opacity-100 transform translate-y-0' 
-                  : 'opacity-0 transform translate-y-8'
-              }`}
+              key={currentCardIndex}
+              className="border-0 shadow-lg hover:shadow-xl transition-all duration-1000 border-gold/20 animate-slide-in-right"
             >
               <CardHeader className="text-center pb-4">
                 <div className="w-16 h-16 gold-gradient rounded-2xl flex items-center justify-center mx-auto mb-4">
-                  <feature.icon className="w-8 h-8 text-white" />
+                  <currentFeature.icon className="w-8 h-8 text-white" />
                 </div>
                 <CardTitle className="text-xl font-semibold text-gray-900">
-                  {feature.title}
+                  {currentFeature.title}
                 </CardTitle>
               </CardHeader>
               <CardContent className="text-center">
                 <p className="text-gray-600 leading-relaxed">
-                  {feature.description}
+                  {currentFeature.description}
                 </p>
               </CardContent>
             </Card>
-          ))}
+          </div>
         </div>
       </div>
     </section>
