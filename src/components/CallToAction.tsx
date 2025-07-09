@@ -26,11 +26,11 @@ const CallToAction = () => {
         </p>
         
         <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-8">
-          <Button size="lg" className="bg-white text-primary hover:bg-gray-100 px-8 py-4 text-lg font-semibold">
+          <Button size="lg" className="bg-primary text-primary-foreground hover:bg-primary/90 px-8 py-4 text-lg font-semibold">
             Create Free Account
             <ArrowRight className="w-5 h-5 ml-2" />
           </Button>
-          <Button variant="outline" size="lg" className="border-white text-white hover:bg-white hover:text-primary px-8 py-4 text-lg">
+          <Button variant="outline" size="lg" className="bg-gold text-gold-foreground border-gold hover:bg-gold-light px-8 py-4 text-lg">
             Schedule Demo
           </Button>
         </div>
