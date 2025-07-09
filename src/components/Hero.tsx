@@ -18,10 +18,10 @@ const Hero = () => {
               Access ASX markets, international opportunities, and expert insights tailored for Australian investors.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 mb-8">
-              <Button size="lg" className="aussie-gold-gradient text-white border-0 px-8 py-4 text-lg hover:opacity-90">
+              <Button size="lg" className="bg-primary text-primary-foreground hover:bg-primary/90 px-8 py-4 text-lg">
                 Start Investing Today
               </Button>
-              <Button variant="outline" size="lg" className="px-8 py-4 text-lg border-gold text-gold hover:bg-gold hover:text-gold-foreground">
+              <Button size="lg" className="bg-gold text-gold-foreground hover:bg-gold/90 px-8 py-4 text-lg">
                 Explore Platform
               </Button>
             </div>
@@ -42,56 +42,6 @@ const Hero = () => {
           </div>
           
           <div className="space-y-6">
-            {/* Portfolio Performance Card */}
-            <div className="bg-white rounded-2xl shadow-2xl p-8 border border-gold/20">
-              <div className="mb-6">
-                <h3 className="text-lg font-semibold text-gray-900 mb-4">Portfolio Performance</h3>
-                <div className="space-y-4">
-                  <div className="flex justify-between items-center">
-                    <span className="text-gray-600">Total Value</span>
-                    <span className="text-2xl font-bold text-gray-900">$127,450</span>
-                  </div>
-                  <div className="flex justify-between items-center">
-                    <span className="text-gray-600">Today's Change</span>
-                    <span className="text-lg font-semibold text-gold flex items-center">
-                      <TrendingUp className="w-4 h-4 mr-1" />
-                      +$2,340 (1.87%)
-                    </span>
-                  </div>
-                </div>
-              </div>
-              
-              <div className="space-y-3">
-                <div className="flex justify-between items-center py-2">
-                  <div className="flex items-center space-x-3">
-                    <div className="w-8 h-8 bg-blue-100 rounded-full flex items-center justify-center">
-                      <span className="text-xs font-bold text-blue-600">CBA</span>
-                    </div>
-                    <span className="font-medium">Commonwealth Bank</span>
-                  </div>
-                  <span className="text-green-600 font-medium">+2.1%</span>
-                </div>
-                <div className="flex justify-between items-center py-2">
-                  <div className="flex items-center space-x-3">
-                    <div className="w-8 h-8 bg-red-100 rounded-full flex items-center justify-center">
-                      <span className="text-xs font-bold text-red-600">BHP</span>
-                    </div>
-                    <span className="font-medium">BHP Group</span>
-                  </div>
-                  <span className="text-green-600 font-medium">+1.5%</span>
-                </div>
-                <div className="flex justify-between items-center py-2">
-                  <div className="flex items-center space-x-3">
-                    <div className="w-8 h-8 bg-purple-100 rounded-full flex items-center justify-center">
-                      <span className="text-xs font-bold text-purple-600">CSL</span>
-                    </div>
-                    <span className="font-medium">CSL Limited</span>
-                  </div>
-                  <span className="text-red-600 font-medium">-0.8%</span>
-                </div>
-              </div>
-            </div>
-
             {/* High Yield Bonds Card */}
             <div className="bg-white rounded-2xl shadow-2xl p-8 border border-gold/20">
               <h3 className="text-lg font-semibold text-gray-900 mb-4">High Yield Bonds</h3>

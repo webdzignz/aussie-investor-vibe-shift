@@ -30,7 +30,7 @@ const CallToAction = () => {
             Create Free Account
             <ArrowRight className="w-5 h-5 ml-2" />
           </Button>
-          <Button variant="outline" size="lg" className="bg-gold text-gold-foreground border-gold hover:bg-gold-light px-8 py-4 text-lg">
+          <Button size="lg" className="bg-gold text-gold-foreground hover:bg-gold/90 px-8 py-4 text-lg">
             Schedule Demo
           </Button>
         </div>
