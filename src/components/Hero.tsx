@@ -123,7 +123,7 @@ const Hero = () => {
           
           <div className="space-y-6">
             {/* High Yield Bonds Card */}
-            <div className="bg-white rounded-2xl shadow-2xl p-8 border border-gold/20">
+            <div className="bg-white rounded-2xl shadow-2xl p-8 border border-black">
               <h3 className="text-lg font-semibold text-gray-900 mb-4">High Yield Bonds</h3>
               <div className="space-y-3">
                 {bondsData.map((bond, index) => (

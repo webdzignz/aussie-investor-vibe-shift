@@ -88,7 +88,7 @@ const MarketData = () => {
             <Card 
               key={index} 
               id={`bond-${bond.id}`}
-              className={`shadow-lg ${bond.cardColor} hover:shadow-xl transition-all duration-300`}
+              className={`shadow-lg ${bond.cardColor} hover:shadow-xl transition-all duration-300 border border-black rounded-2xl`}
             >
               <CardHeader className="pb-3">
                 <div className="flex items-center justify-between mb-2">

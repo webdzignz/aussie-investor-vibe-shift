@@ -74,7 +74,7 @@ const Features = () => {
             return (
               <Card 
                 key={`${currentGroupIndex}-${index}`}
-                className="border-0 shadow-lg hover:shadow-xl transition-all duration-1000 border-gold/20 animate-fade-in"
+                className="border border-black shadow-lg hover:shadow-xl transition-all duration-1000 rounded-2xl animate-fade-in"
               >
                 <CardHeader className="text-center pb-4">
                   <div className="w-16 h-16 gold-gradient rounded-2xl flex items-center justify-center mx-auto mb-4">
