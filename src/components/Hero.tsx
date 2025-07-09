@@ -17,31 +17,31 @@ const Hero = () => {
               Access ASX markets, international opportunities, and expert insights tailored for Australian investors.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 mb-8">
-              <Button size="lg" className="aussie-gradient text-white border-0 px-8 py-4 text-lg">
+              <Button size="lg" className="aussie-gold-gradient text-white border-0 px-8 py-4 text-lg hover:opacity-90">
                 Start Investing Today
               </Button>
-              <Button variant="outline" size="lg" className="px-8 py-4 text-lg">
+              <Button variant="outline" size="lg" className="px-8 py-4 text-lg border-gold text-gold hover:bg-gold hover:text-gold-foreground">
                 Explore Platform
               </Button>
             </div>
             <div className="flex items-center space-x-6 text-sm text-gray-600">
               <div className="flex items-center space-x-2">
-                <Shield className="w-4 h-4 text-primary" />
+                <Shield className="w-4 h-4 text-gold" />
                 <span>ASIC Regulated</span>
               </div>
               <div className="flex items-center space-x-2">
-                <Zap className="w-4 h-4 text-primary" />
+                <Zap className="w-4 h-4 text-gold" />
                 <span>Real-time Trading</span>
               </div>
               <div className="flex items-center space-x-2">
-                <Globe className="w-4 h-4 text-primary" />
+                <Globe className="w-4 h-4 text-gold" />
                 <span>Global Markets</span>
               </div>
             </div>
           </div>
           
           <div className="relative">
-            <div className="bg-white rounded-2xl shadow-2xl p-8">
+            <div className="bg-white rounded-2xl shadow-2xl p-8 border border-gold/20">
               <div className="mb-6">
                 <h3 className="text-lg font-semibold text-gray-900 mb-4">Portfolio Performance</h3>
                 <div className="space-y-4">
@@ -51,7 +51,7 @@ const Hero = () => {
                   </div>
                   <div className="flex justify-between items-center">
                     <span className="text-gray-600">Today's Change</span>
-                    <span className="text-lg font-semibold text-green-600 flex items-center">
+                    <span className="text-lg font-semibold text-gold flex items-center">
                       <TrendingUp className="w-4 h-4 mr-1" />
                       +$2,340 (1.87%)
                     </span>

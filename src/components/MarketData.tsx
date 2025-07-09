@@ -32,7 +32,7 @@ const MarketData = () => {
         </div>
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-12">
-          <Card className="shadow-lg">
+          <Card className="shadow-lg border-gold/10">
             <CardHeader>
               <CardTitle className="text-xl font-semibold text-gray-900">
                 Market Indices
@@ -47,7 +47,7 @@ const MarketData = () => {
                       <div className="text-2xl font-bold text-gray-900">{item.price}</div>
                     </div>
                     <div className="text-right">
-                      <div className={`flex items-center ${item.trend === 'up' ? 'text-green-600' : 'text-red-600'}`}>
+                      <div className={`flex items-center ${item.trend === 'up' ? 'text-gold' : 'text-red-600'}`}>
                         {item.trend === 'up' ? (
                           <TrendingUp className="w-4 h-4 mr-1" />
                         ) : (
@@ -55,7 +55,7 @@ const MarketData = () => {
                         )}
                         <span className="font-medium">{item.change}</span>
                       </div>
-                      <div className={`text-sm ${item.trend === 'up' ? 'text-green-600' : 'text-red-600'}`}>
+                      <div className={`text-sm ${item.trend === 'up' ? 'text-gold' : 'text-red-600'}`}>
                         {item.percent}
                       </div>
                     </div>
@@ -65,7 +65,7 @@ const MarketData = () => {
             </CardContent>
           </Card>
 
-          <Card className="shadow-lg">
+          <Card className="shadow-lg border-gold/10">
             <CardHeader>
               <CardTitle className="text-xl font-semibold text-gray-900">
                 Top ASX Stocks
@@ -76,7 +76,7 @@ const MarketData = () => {
                 {topStocks.map((stock, index) => (
                   <div key={index} className="flex justify-between items-center py-2">
                     <div className="flex items-center space-x-3">
-                      <div className="w-10 h-10 aussie-gradient rounded-lg flex items-center justify-center">
+                      <div className="w-10 h-10 gold-gradient rounded-lg flex items-center justify-center">
                         <span className="text-white font-bold text-sm">{stock.symbol}</span>
                       </div>
                       <div>
@@ -86,7 +86,7 @@ const MarketData = () => {
                     </div>
                     <div className="text-right">
                       <div className="font-semibold text-gray-900">{stock.price}</div>
-                      <div className={`text-sm ${stock.change.startsWith('+') ? 'text-green-600' : 'text-red-600'}`}>
+                      <div className={`text-sm ${stock.change.startsWith('+') ? 'text-gold' : 'text-red-600'}`}>
                         {stock.change}
                       </div>
                     </div>

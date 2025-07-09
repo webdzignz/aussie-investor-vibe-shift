@@ -51,9 +51,9 @@ const Features = () => {
         
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {features.map((feature, index) => (
-            <Card key={index} className="border-0 shadow-lg hover:shadow-xl transition-shadow duration-300">
+            <Card key={index} className="border-0 shadow-lg hover:shadow-xl transition-shadow duration-300 border-gold/20">
               <CardHeader className="text-center pb-4">
-                <div className="w-16 h-16 aussie-gradient rounded-2xl flex items-center justify-center mx-auto mb-4">
+                <div className="w-16 h-16 gold-gradient rounded-2xl flex items-center justify-center mx-auto mb-4">
                   <feature.icon className="w-8 h-8 text-white" />
                 </div>
                 <CardTitle className="text-xl font-semibold text-gray-900">

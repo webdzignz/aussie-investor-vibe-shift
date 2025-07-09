@@ -9,7 +9,7 @@ const Header = () => {
         <div className="flex justify-between items-center h-16">
           <div className="flex items-center space-x-4">
             <div className="flex items-center space-x-2">
-              <div className="w-8 h-8 aussie-gradient rounded-lg flex items-center justify-center">
+              <div className="w-8 h-8 aussie-gold-gradient rounded-lg flex items-center justify-center">
                 <MapPin className="w-5 h-5 text-white" />
               </div>
               <span className="text-xl font-bold text-primary">Australian Investor</span>
@@ -17,19 +17,19 @@ const Header = () => {
           </div>
           
           <nav className="hidden md:flex items-center space-x-8">
-            <a href="#" className="text-gray-700 hover:text-primary transition-colors">Dashboard</a>
-            <a href="#" className="text-gray-700 hover:text-primary transition-colors">Portfolio</a>
-            <a href="#" className="text-gray-700 hover:text-primary transition-colors">Markets</a>
-            <a href="#" className="text-gray-700 hover:text-primary transition-colors">Research</a>
-            <a href="#" className="text-gray-700 hover:text-primary transition-colors">Education</a>
+            <a href="#" className="text-gray-700 hover:text-gold transition-colors">Dashboard</a>
+            <a href="#" className="text-gray-700 hover:text-gold transition-colors">Portfolio</a>
+            <a href="#" className="text-gray-700 hover:text-gold transition-colors">Markets</a>
+            <a href="#" className="text-gray-700 hover:text-gold transition-colors">Research</a>
+            <a href="#" className="text-gray-700 hover:text-gold transition-colors">Education</a>
           </nav>
 
           <div className="flex items-center space-x-4">
-            <Button variant="outline" size="sm" className="hidden md:flex">
+            <Button variant="outline" size="sm" className="hidden md:flex border-gold text-gold hover:bg-gold hover:text-gold-foreground">
               <User className="w-4 h-4 mr-2" />
               Sign In
             </Button>
-            <Button className="aussie-gradient text-white border-0">
+            <Button className="gold-gradient text-white border-0 hover:opacity-90">
               Get Started
             </Button>
             <Button variant="ghost" size="sm" className="md:hidden">

@@ -1,4 +1,3 @@
-
 import { MapPin, Mail, Phone, Facebook, Twitter, Linkedin, Instagram } from "lucide-react";
 
 const Footer = () => {
@@ -8,7 +7,7 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           <div>
             <div className="flex items-center space-x-2 mb-6">
-              <div className="w-8 h-8 aussie-gradient rounded-lg flex items-center justify-center">
+              <div className="w-8 h-8 gold-gradient rounded-lg flex items-center justify-center">
                 <MapPin className="w-5 h-5 text-white" />
               </div>
               <span className="text-xl font-bold text-white">Australian Investor</span>
@@ -18,32 +17,32 @@ const Footer = () => {
               and secure trading platforms to build lasting wealth.
             </p>
             <div className="flex space-x-4">
-              <Facebook className="w-5 h-5 text-gray-400 hover:text-white cursor-pointer transition-colors" />
-              <Twitter className="w-5 h-5 text-gray-400 hover:text-white cursor-pointer transition-colors" />
-              <Linkedin className="w-5 h-5 text-gray-400 hover:text-white cursor-pointer transition-colors" />
-              <Instagram className="w-5 h-5 text-gray-400 hover:text-white cursor-pointer transition-colors" />
+              <Facebook className="w-5 h-5 text-gray-400 hover:text-gold cursor-pointer transition-colors" />
+              <Twitter className="w-5 h-5 text-gray-400 hover:text-gold cursor-pointer transition-colors" />
+              <Linkedin className="w-5 h-5 text-gray-400 hover:text-gold cursor-pointer transition-colors" />
+              <Instagram className="w-5 h-5 text-gray-400 hover:text-gold cursor-pointer transition-colors" />
             </div>
           </div>
           
           <div>
             <h4 className="text-white font-semibold mb-6">Platform</h4>
             <ul className="space-y-3">
-              <li><a href="#" className="hover:text-white transition-colors">Dashboard</a></li>
-              <li><a href="#" className="hover:text-white transition-colors">Portfolio</a></li>
-              <li><a href="#" className="hover:text-white transition-colors">Trading</a></li>
-              <li><a href="#" className="hover:text-white transition-colors">Research</a></li>
-              <li><a href="#" className="hover:text-white transition-colors">Mobile App</a></li>
+              <li><a href="#" className="hover:text-gold transition-colors">Dashboard</a></li>
+              <li><a href="#" className="hover:text-gold transition-colors">Portfolio</a></li>
+              <li><a href="#" className="hover:text-gold transition-colors">Trading</a></li>
+              <li><a href="#" className="hover:text-gold transition-colors">Research</a></li>
+              <li><a href="#" className="hover:text-gold transition-colors">Mobile App</a></li>
             </ul>
           </div>
           
           <div>
             <h4 className="text-white font-semibold mb-6">Resources</h4>
             <ul className="space-y-3">
-              <li><a href="#" className="hover:text-white transition-colors">Education Hub</a></li>
-              <li><a href="#" className="hover:text-white transition-colors">Market News</a></li>
-              <li><a href="#" className="hover:text-white transition-colors">Webinars</a></li>
-              <li><a href="#" className="hover:text-white transition-colors">Help Center</a></li>
-              <li><a href="#" className="hover:text-white transition-colors">API Documentation</a></li>
+              <li><a href="#" className="hover:text-gold transition-colors">Education Hub</a></li>
+              <li><a href="#" className="hover:text-gold transition-colors">Market News</a></li>
+              <li><a href="#" className="hover:text-gold transition-colors">Webinars</a></li>
+              <li><a href="#" className="hover:text-gold transition-colors">Help Center</a></li>
+              <li><a href="#" className="hover:text-gold transition-colors">API Documentation</a></li>
             </ul>
           </div>
           

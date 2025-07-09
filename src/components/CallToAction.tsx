@@ -4,12 +4,12 @@ import { ArrowRight, Star } from "lucide-react";
 
 const CallToAction = () => {
   return (
-    <section className="py-20 aussie-gradient">
+    <section className="py-20 aussie-gold-gradient">
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
         <div className="mb-8">
           <div className="flex justify-center items-center space-x-1 mb-4">
             {[...Array(5)].map((_, i) => (
-              <Star key={i} className="w-6 h-6 text-yellow-400 fill-current" />
+              <Star key={i} className="w-6 h-6 text-yellow-300 fill-current" />
             ))}
           </div>
           <p className="text-green-100 text-lg">
@@ -37,15 +37,15 @@ const CallToAction = () => {
         
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 text-center text-green-100">
           <div>
-            <div className="text-3xl font-bold text-white mb-2">$0</div>
+            <div className="text-3xl font-bold text-yellow-300 mb-2">$0</div>
             <div>Account fees</div>
           </div>
           <div>
-            <div className="text-3xl font-bold text-white mb-2">24/7</div>
+            <div className="text-3xl font-bold text-yellow-300 mb-2">24/7</div>
             <div>Customer support</div>
           </div>
           <div>
-            <div className="text-3xl font-bold text-white mb-2">100k+</div>
+            <div className="text-3xl font-bold text-yellow-300 mb-2">100k+</div>
             <div>Happy investors</div>
           </div>
         </div>
