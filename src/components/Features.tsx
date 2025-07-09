@@ -1,8 +1,11 @@
 
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { BarChart3, PieChart, TrendingUp, Shield, Smartphone, BookOpen } from "lucide-react";
+import { useState, useEffect } from "react";
 
 const Features = () => {
+  const [visibleCards, setVisibleCards] = useState(0);
+
   const features = [
     {
       icon: BarChart3,
@@ -36,6 +39,19 @@ const Features = () => {
     }
   ];
 
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setVisibleCards((prev) => {
+        if (prev < features.length) {
+          return prev + 1;
+        }
+        return prev;
+      });
+    }, 5000);
+
+    return () => clearInterval(interval);
+  }, [features.length]);
+
   return (
     <section className="py-20 bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -51,7 +67,14 @@ const Features = () => {
         
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {features.map((feature, index) => (
-            <Card key={index} className="border-0 shadow-lg hover:shadow-xl transition-shadow duration-300 border-gold/20">
+            <Card 
+              key={index} 
+              className={`border-0 shadow-lg hover:shadow-xl transition-all duration-500 border-gold/20 ${
+                index < visibleCards 
+                  ? 'opacity-100 transform translate-y-0' 
+                  : 'opacity-0 transform translate-y-8'
+              }`}
+            >
               <CardHeader className="text-center pb-4">
                 <div className="w-16 h-16 gold-gradient rounded-2xl flex items-center justify-center mx-auto mb-4">
                   <feature.icon className="w-8 h-8 text-white" />
