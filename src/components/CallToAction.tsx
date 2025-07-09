@@ -15,15 +15,16 @@ const CallToAction = () => {
   };
 
   return (
-    <section className="py-16 bg-primary">
+    <section className="py-16 bg-green-600">
       <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
-        <Card className="max-w-4xl mx-auto bg-white/95 backdrop-blur-sm">
-          <CardHeader className="pb-4">
-            <CardTitle className="text-2xl text-center text-primary">Start Your Investment</CardTitle>
-          </CardHeader>
-          <CardContent className="pt-0">
-            <form onSubmit={handleSubmit} className="space-y-4">
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+        <div className="text-center mb-8">
+          <h2 className="text-3xl font-bold text-white mb-2">Start Your Journey</h2>
+          <p className="text-white/90 text-lg">Add details here</p>
+        </div>
+        <Card className="max-w-6xl mx-auto bg-white/95 backdrop-blur-sm">
+          <CardContent className="pt-6">
+            <form onSubmit={handleSubmit} className="space-y-6">
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                 <div className="space-y-2">
                   <Label htmlFor="firstName">First Name</Label>
                   <Input id="firstName" placeholder="Enter your first name" required />
@@ -39,7 +40,7 @@ const CallToAction = () => {
                 <Textarea id="address" placeholder="Enter your full address" rows={2} required />
               </div>
 
-              <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+              <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
                 <div className="space-y-2">
                   <Label htmlFor="phone">Phone Number</Label>
                   <Input id="phone" type="tel" placeholder="Enter your phone number" required />
@@ -78,7 +79,7 @@ const CallToAction = () => {
                 </div>
               </div>
 
-              <Button type="submit" size="lg" className="w-full bg-primary text-primary-foreground hover:bg-primary/90 text-lg font-semibold mt-6">
+              <Button type="submit" size="lg" className="w-full bg-primary text-primary-foreground hover:bg-primary/90 text-lg font-semibold">
                 Start My Investment Journey
                 <ArrowRight className="w-5 h-5 ml-2" />
               </Button>
