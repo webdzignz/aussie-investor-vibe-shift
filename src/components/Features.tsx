@@ -62,9 +62,12 @@ const Features = () => {
           <h2 className="text-4xl font-bold text-gray-900 mb-4">
             Everything You Need to Invest Successfully
           </h2>
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+          <p className="text-xl text-gray-600 max-w-3xl mx-auto mb-6">
             Our platform combines cutting-edge technology with decades of market expertise 
             to help Australian investors achieve their financial goals.
+          </p>
+          <p className="text-lg text-gray-700 max-w-2xl mx-auto font-medium">
+            Australian Investor - top financial intermediary introducing investors to the ideal financial partner.
           </p>
         </div>
         
