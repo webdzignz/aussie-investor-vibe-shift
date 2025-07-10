@@ -74,18 +74,18 @@ const Features = () => {
             return (
               <Card 
                 key={`${currentGroupIndex}-${index}`}
-                className="border border-black shadow-lg hover:shadow-xl transition-all duration-1000 rounded-2xl animate-fade-in"
+                className="bg-green-800 border border-green-700 shadow-lg hover:shadow-xl transition-all duration-1000 rounded-2xl animate-fade-in"
               >
                 <CardHeader className="text-center pb-4">
                   <div className="w-16 h-16 gold-gradient rounded-2xl flex items-center justify-center mx-auto mb-4">
                     <IconComponent className="w-8 h-8 text-white" />
                   </div>
-                  <CardTitle className="text-xl font-semibold text-gray-900">
+                  <CardTitle className="text-xl font-semibold text-white">
                     {feature.title}
                   </CardTitle>
                 </CardHeader>
                 <CardContent className="text-center">
-                  <p className="text-gray-600 leading-relaxed">
+                  <p className="text-white/90 leading-relaxed">
                     {feature.description}
                   </p>
                 </CardContent>
