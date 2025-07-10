@@ -10,6 +10,13 @@ const Header = () => {
     }
   };
 
+  const scrollToIntroduction = () => {
+    const featuresSection = document.querySelector('section.py-20.bg-white');
+    if (featuresSection) {
+      featuresSection.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
   return (
     <header className="bg-black border-b border-gray-800 shadow-sm rounded-2xl m-4">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -28,7 +35,12 @@ const Header = () => {
           </div>
           
           <nav className="hidden md:flex items-center space-x-8">
-            <a href="#" className="text-gray-300 hover:text-white transition-colors">Introduction</a>
+            <button 
+              onClick={scrollToIntroduction}
+              className="text-gray-300 hover:text-white transition-colors cursor-pointer"
+            >
+              Introduction
+            </button>
             <button 
               onClick={scrollToMarketData}
               className="text-gray-300 hover:text-white transition-colors cursor-pointer"
