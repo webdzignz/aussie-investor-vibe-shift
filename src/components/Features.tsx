@@ -1,4 +1,3 @@
-
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { BarChart3, PieChart, TrendingUp, Shield, Smartphone, BookOpen } from "lucide-react";
 import { useState, useEffect } from "react";
@@ -67,7 +66,7 @@ const Features = () => {
             to help Australian investors achieve their financial goals.
           </p>
           <p className="text-lg text-gray-700 max-w-2xl mx-auto font-medium">
-            Australian Investor - top financial intermediary introducing investors to the ideal financial partner.
+            Rate Discovery - top financial intermediary introducing investors to the ideal financial partner.
           </p>
         </div>
         
