@@ -7,7 +7,7 @@ const MarketData = () => {
     {
       bank: "Deutsche Bank",
       logo: "/lovable-uploads/2a11e205-6972-4211-810a-a0511eb86512.png",
-      logoColor: "bg-blue-600",
+      logoColor: "bg-blue-900",
       cardColor: "bg-blue-600/10 border-blue-600/20",
       name: "Deutsche Bank 10%",
       yield: "10%",
@@ -20,7 +20,7 @@ const MarketData = () => {
     {
       bank: "Barclays",
       logo: "/lovable-uploads/c6276a68-db62-4bd5-b3e8-eedc1d2c7f13.png",
-      logoColor: "bg-blue-500",
+      logoColor: "bg-blue-300",
       cardColor: "bg-cyan-600/10 border-cyan-600/20",
       name: "Barclays 9.625%",
       yield: "9.625%",
@@ -46,7 +46,7 @@ const MarketData = () => {
     {
       bank: "UBS",
       logo: "/lovable-uploads/910b2a2f-c249-4fbb-aa16-21fa6f50fc1e.png",
-      logoColor: "bg-red-700",
+      logoColor: "bg-black",
       cardColor: "bg-red-700/10 border-red-700/20",
       name: "UBS 9.016%",
       yield: "9.016%",
@@ -59,7 +59,7 @@ const MarketData = () => {
     {
       bank: "JP Morgan",
       logo: "/lovable-uploads/0bf80c5a-0c53-4f79-b182-66cb126ebc15.png",
-      logoColor: "bg-blue-800",
+      logoColor: "bg-blue-900",
       cardColor: "bg-blue-800/10 border-blue-800/20",
       name: "JP Morgan 8.75%",
       yield: "8.75%",
@@ -92,7 +92,7 @@ const MarketData = () => {
             >
               <CardHeader className="pb-3">
                 <div className="flex items-center justify-between mb-2">
-                  <div className="w-12 h-12 bg-white rounded-lg border flex items-center justify-center">
+                  <div className={`w-12 h-12 ${bond.logoColor} rounded-lg border flex items-center justify-center`}>
                     <img src={bond.logo} alt={bond.bank} className="w-8 h-8 object-contain" />
                   </div>
                   <Badge variant="secondary" className={`${bond.ratingColor} font-medium`}>
