@@ -1,4 +1,3 @@
-
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 
@@ -76,7 +75,7 @@ const MarketData = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <h2 className="text-4xl font-bold text-gray-900 mb-4">
-            Current Bond Offerings
+            Best Performers
           </h2>
           <p className="text-xl text-gray-600">
             Premium bond opportunities with competitive yields and ratings
