@@ -3,6 +3,13 @@ import { Button } from "@/components/ui/button";
 import { User, Menu } from "lucide-react";
 
 const Header = () => {
+  const scrollToMarketData = () => {
+    const marketDataSection = document.getElementById('market-data');
+    if (marketDataSection) {
+      marketDataSection.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
   return (
     <header className="bg-black border-b border-gray-800 shadow-sm rounded-2xl m-4">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -22,7 +29,12 @@ const Header = () => {
           
           <nav className="hidden md:flex items-center space-x-8">
             <a href="#" className="text-gray-300 hover:text-white transition-colors">Introduction</a>
-            <a href="#" className="text-gray-300 hover:text-white transition-colors">Products</a>
+            <button 
+              onClick={scrollToMarketData}
+              className="text-gray-300 hover:text-white transition-colors cursor-pointer"
+            >
+              Best Performers
+            </button>
             <a href="#" className="text-gray-300 hover:text-white transition-colors">Contact Us</a>
           </nav>
 
