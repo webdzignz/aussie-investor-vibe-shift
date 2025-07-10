@@ -9,7 +9,7 @@ const Header = () => {
         <div className="flex justify-between items-center h-16">
           <div className="flex items-center space-x-4">
             <div className="flex items-center space-x-2">
-              <div className="w-8 h-8 bg-gray-800 rounded-lg flex items-center justify-center">
+              <div className="w-8 h-8 bg-white rounded-lg flex items-center justify-center">
                 <img 
                   src="/lovable-uploads/1472ad70-7fe5-477b-88d5-67ae021f7dc8.png" 
                   alt="Australia"
