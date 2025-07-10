@@ -8,7 +8,8 @@ const MarketData = () => {
       bank: "Deutsche Bank",
       logo: "/lovable-uploads/2a11e205-6972-4211-810a-a0511eb86512.png",
       logoColor: "bg-blue-900",
-      cardColor: "bg-blue-600/10 border-blue-600/20",
+      cardColor: "bg-blue-900/90 border-blue-900/20",
+      textColor: "text-white",
       name: "Deutsche Bank 10%",
       yield: "10%",
       rating: "A-",
@@ -21,7 +22,8 @@ const MarketData = () => {
       bank: "Barclays",
       logo: "/lovable-uploads/c6276a68-db62-4bd5-b3e8-eedc1d2c7f13.png",
       logoColor: "bg-blue-300",
-      cardColor: "bg-cyan-600/10 border-cyan-600/20",
+      cardColor: "bg-blue-300/90 border-blue-300/20",
+      textColor: "text-gray-900",
       name: "Barclays 9.625%",
       yield: "9.625%",
       rating: "A",
@@ -34,7 +36,8 @@ const MarketData = () => {
       bank: "Santander",
       logo: "/lovable-uploads/4dcaf7c3-9230-4b8d-b0b3-384f45a53768.png",
       logoColor: "bg-red-600",
-      cardColor: "bg-red-600/10 border-red-600/20",
+      cardColor: "bg-red-600/90 border-red-600/20",
+      textColor: "text-white",
       name: "Santander 9.625%",
       yield: "9.625%",
       rating: "A",
@@ -47,7 +50,8 @@ const MarketData = () => {
       bank: "UBS",
       logo: "/lovable-uploads/910b2a2f-c249-4fbb-aa16-21fa6f50fc1e.png",
       logoColor: "bg-black",
-      cardColor: "bg-red-700/10 border-red-700/20",
+      cardColor: "bg-black/90 border-black/20",
+      textColor: "text-white",
       name: "UBS 9.016%",
       yield: "9.016%",
       rating: "A",
@@ -60,7 +64,8 @@ const MarketData = () => {
       bank: "JP Morgan",
       logo: "/lovable-uploads/0bf80c5a-0c53-4f79-b182-66cb126ebc15.png",
       logoColor: "bg-blue-900",
-      cardColor: "bg-blue-800/10 border-blue-800/20",
+      cardColor: "bg-blue-900/90 border-blue-900/20",
+      textColor: "text-white",
       name: "JP Morgan 8.75%",
       yield: "8.75%",
       rating: "BBB+",
@@ -88,7 +93,7 @@ const MarketData = () => {
             <Card 
               key={index} 
               id={`bond-${bond.id}`}
-              className={`shadow-lg ${bond.cardColor} hover:shadow-xl transition-all duration-300 border border-black rounded-2xl`}
+              className={`shadow-lg ${bond.cardColor} hover:shadow-xl transition-all duration-300 border rounded-2xl`}
             >
               <CardHeader className="pb-3">
                 <div className="flex items-center justify-between mb-2">
@@ -99,25 +104,25 @@ const MarketData = () => {
                     {bond.rating}
                   </Badge>
                 </div>
-                <CardTitle className="text-lg font-semibold text-gray-900 leading-tight">
+                <CardTitle className={`text-lg font-semibold ${bond.textColor} leading-tight`}>
                   {bond.name}
                 </CardTitle>
               </CardHeader>
               <CardContent>
                 <div className="space-y-3">
                   <div className="text-center">
-                    <div className="text-3xl font-bold text-red-600 mb-1">{bond.yield}</div>
-                    <div className="text-sm text-gray-500">Annual Yield</div>
+                    <div className={`text-3xl font-bold ${bond.textColor} mb-1`}>{bond.yield}</div>
+                    <div className={`text-sm ${bond.textColor} opacity-80`}>Annual Yield</div>
                   </div>
                   
                   <div className="space-y-2 text-sm">
                     <div className="flex justify-between">
-                      <span className="text-gray-600">Currency:</span>
-                      <span className="font-medium text-gray-900">{bond.currency}</span>
+                      <span className={`${bond.textColor} opacity-80`}>Currency:</span>
+                      <span className={`font-medium ${bond.textColor}`}>{bond.currency}</span>
                     </div>
                     <div className="flex justify-between">
-                      <span className="text-gray-600">Maturity:</span>
-                      <span className="font-medium text-gray-900">{bond.maturity}</span>
+                      <span className={`${bond.textColor} opacity-80`}>Maturity:</span>
+                      <span className={`font-medium ${bond.textColor}`}>{bond.maturity}</span>
                     </div>
                   </div>
                 </div>
