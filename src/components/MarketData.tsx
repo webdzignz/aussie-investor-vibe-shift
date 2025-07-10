@@ -1,3 +1,4 @@
+
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 
@@ -5,7 +6,7 @@ const MarketData = () => {
   const bondsData = [
     {
       bank: "Deutsche Bank",
-      logo: "DB",
+      logo: "/lovable-uploads/2a11e205-6972-4211-810a-a0511eb86512.png",
       logoColor: "bg-blue-600",
       cardColor: "bg-blue-50 border-blue-100",
       name: "Deutsche Bank 10%",
@@ -18,7 +19,7 @@ const MarketData = () => {
     },
     {
       bank: "Barclays",
-      logo: "BC",
+      logo: "/lovable-uploads/c6276a68-db62-4bd5-b3e8-eedc1d2c7f13.png",
       logoColor: "bg-blue-500",
       cardColor: "bg-blue-50 border-blue-100",
       name: "Barclays 9.625%",
@@ -31,7 +32,7 @@ const MarketData = () => {
     },
     {
       bank: "Santander",
-      logo: "ST",
+      logo: "/lovable-uploads/4dcaf7c3-9230-4b8d-b0b3-384f45a53768.png",
       logoColor: "bg-red-600",
       cardColor: "bg-red-50 border-red-100",
       name: "Santander 9.625%",
@@ -44,7 +45,7 @@ const MarketData = () => {
     },
     {
       bank: "UBS",
-      logo: "UBS",
+      logo: "/lovable-uploads/910b2a2f-c249-4fbb-aa16-21fa6f50fc1e.png",
       logoColor: "bg-red-700",
       cardColor: "bg-red-50 border-red-100",
       name: "UBS 9.016%",
@@ -57,7 +58,7 @@ const MarketData = () => {
     },
     {
       bank: "JP Morgan",
-      logo: "JPM",
+      logo: "/lovable-uploads/0bf80c5a-0c53-4f79-b182-66cb126ebc15.png",
       logoColor: "bg-blue-800",
       cardColor: "bg-blue-50 border-blue-100",
       name: "JP Morgan 8.75%",
@@ -91,8 +92,8 @@ const MarketData = () => {
             >
               <CardHeader className="pb-3">
                 <div className="flex items-center justify-between mb-2">
-                  <div className={`w-12 h-12 ${bond.logoColor} rounded-lg flex items-center justify-center`}>
-                    <span className="text-xs font-bold text-white">{bond.logo}</span>
+                  <div className="w-12 h-12 bg-white rounded-lg border flex items-center justify-center">
+                    <img src={bond.logo} alt={bond.bank} className="w-8 h-8 object-contain" />
                   </div>
                   <Badge variant="secondary" className={`${bond.ratingColor} font-medium`}>
                     {bond.rating}

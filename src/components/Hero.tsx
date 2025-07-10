@@ -7,7 +7,7 @@ const Hero = () => {
   const bondsData = [
     {
       bank: "Deutsche Bank",
-      logo: "DB",
+      logo: "/lovable-uploads/2a11e205-6972-4211-810a-a0511eb86512.png",
       logoColor: "bg-blue-600",
       name: "Deutsche Bank 10%",
       yield: "10%",
@@ -19,7 +19,7 @@ const Hero = () => {
     },
     {
       bank: "Barclays",
-      logo: "BC",
+      logo: "/lovable-uploads/c6276a68-db62-4bd5-b3e8-eedc1d2c7f13.png",
       logoColor: "bg-blue-500",
       name: "Barclays 9.625%",
       yield: "9.625%",
@@ -31,7 +31,7 @@ const Hero = () => {
     },
     {
       bank: "Santander",
-      logo: "ST",
+      logo: "/lovable-uploads/4dcaf7c3-9230-4b8d-b0b3-384f45a53768.png",
       logoColor: "bg-red-600",
       name: "Santander 9.625%",
       yield: "9.625%",
@@ -43,7 +43,7 @@ const Hero = () => {
     },
     {
       bank: "UBS",
-      logo: "UBS",
+      logo: "/lovable-uploads/910b2a2f-c249-4fbb-aa16-21fa6f50fc1e.png",
       logoColor: "bg-red-700",
       name: "UBS 9.016%",
       yield: "9.016%",
@@ -55,7 +55,7 @@ const Hero = () => {
     },
     {
       bank: "JP Morgan",
-      logo: "JPM",
+      logo: "/lovable-uploads/0bf80c5a-0c53-4f79-b182-66cb126ebc15.png",
       logoColor: "bg-blue-800",
       name: "JP Morgan 8.75%",
       yield: "8.75%",
@@ -133,8 +133,8 @@ const Hero = () => {
                     onClick={() => scrollToMarketData(bond.id)}
                   >
                     <div className="flex items-center space-x-3">
-                      <div className={`w-8 h-8 ${bond.logoColor} rounded flex items-center justify-center`}>
-                        <span className="text-xs font-bold text-white">{bond.logo}</span>
+                      <div className="w-8 h-8 bg-white rounded border flex items-center justify-center">
+                        <img src={bond.logo} alt={bond.bank} className="w-6 h-6 object-contain" />
                       </div>
                       <div>
                         <div className="font-medium text-sm">{bond.name}</div>
