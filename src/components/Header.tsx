@@ -17,6 +17,13 @@ const Header = () => {
     }
   };
 
+  const scrollToFooter = () => {
+    const footer = document.querySelector('footer');
+    if (footer) {
+      footer.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
   return (
     <header className="bg-black border-b border-gray-800 shadow-sm rounded-2xl m-4">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -47,7 +54,12 @@ const Header = () => {
             >
               Best Performers
             </button>
-            <a href="#" className="text-gray-300 hover:text-white transition-colors">Contact Us</a>
+            <button 
+              onClick={scrollToFooter}
+              className="text-gray-300 hover:text-white transition-colors cursor-pointer"
+            >
+              Contact Us
+            </button>
           </nav>
 
           <div className="flex items-center space-x-4">
