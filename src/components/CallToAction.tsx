@@ -78,7 +78,7 @@ const CallToAction = () => {
                 </div>
               </div>
 
-              <Button type="submit" size="lg" className="w-full bg-primary text-primary-foreground hover:bg-primary/90 text-lg font-semibold">
+              <Button type="submit" size="lg" className="w-full bg-yellow-500 text-black hover:bg-yellow-600 text-lg font-semibold">
                 Start My Investment Journey
                 <ArrowRight className="w-5 h-5 ml-2" />
               </Button>
