@@ -67,8 +67,14 @@ const Features = () => {
             to help Australian investors achieve their financial goals.
           </p>
         </div>
+
+        <div className="max-w-4xl mx-auto text-center mb-16">
+          <p className="text-lg text-gray-700 leading-relaxed">
+            Rate Discovery leverages decades of specialized expertise to seamlessly connect investors with their optimal financial partners through a comprehensive matching process. By thoroughly understanding each client's unique investment criteria, risk tolerance, and strategic objectives, Rate Discovery taps into its extensive network of vetted financial institutions, private lenders, and investment firms to identify partnerships that align perfectly with investor needs. This personalized approach eliminates the time-consuming process of independently researching and vetting potential partners, while ensuring that every introduction is strategically targeted to maximize investment opportunities and minimize risk exposure. Through their deep industry relationships and proven track record, Rate Discovery serves as the essential bridge between ambitious investors and the financial partnerships that will drive their success.
+          </p>
+        </div>
         
-        <div className="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto mb-16">
+        <div className="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto">
           {currentFeatures.map((feature, index) => {
             const IconComponent = feature.icon;
             return (
@@ -92,12 +98,6 @@ const Features = () => {
               </Card>
             );
           })}
-        </div>
-
-        <div className="max-w-4xl mx-auto text-center">
-          <p className="text-lg text-gray-700 leading-relaxed">
-            Rate Discovery leverages decades of specialized expertise to seamlessly connect investors with their optimal financial partners through a comprehensive matching process. By thoroughly understanding each client's unique investment criteria, risk tolerance, and strategic objectives, Rate Discovery taps into its extensive network of vetted financial institutions, private lenders, and investment firms to identify partnerships that align perfectly with investor needs. This personalized approach eliminates the time-consuming process of independently researching and vetting potential partners, while ensuring that every introduction is strategically targeted to maximize investment opportunities and minimize risk exposure. Through their deep industry relationships and proven track record, Rate Discovery serves as the essential bridge between ambitious investors and the financial partnerships that will drive their success.
-          </p>
         </div>
       </div>
     </section>
