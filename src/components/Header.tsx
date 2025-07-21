@@ -1,8 +1,15 @@
 
 import { Button } from "@/components/ui/button";
-import { User, Menu } from "lucide-react";
+import { User, Menu, Home } from "lucide-react";
+import { useNavigate } from "react-router-dom";
 
 const Header = () => {
+  const navigate = useNavigate();
+
+  const goToHome = () => {
+    navigate('/');
+  };
+
   const scrollToMarketData = () => {
     const marketDataSection = document.getElementById('market-data');
     if (marketDataSection) {
@@ -42,6 +49,13 @@ const Header = () => {
           </div>
           
           <nav className="hidden md:flex items-center space-x-8">
+            <button 
+              onClick={goToHome}
+              className="text-gray-300 hover:text-white transition-colors cursor-pointer flex items-center space-x-1"
+            >
+              <Home className="w-4 h-4" />
+              <span>Home</span>
+            </button>
             <button 
               onClick={scrollToIntroduction}
               className="text-gray-300 hover:text-white transition-colors cursor-pointer"
