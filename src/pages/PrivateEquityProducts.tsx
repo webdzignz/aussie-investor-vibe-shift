@@ -10,7 +10,7 @@ const PrivateEquityProducts = () => {
   return (
     <div className="min-h-screen bg-background">
       <Header />
-      <Hero />
+      <Hero showIPOs={true} />
       <Features />
       <PrivateEquityData />
       <IPOTable />
