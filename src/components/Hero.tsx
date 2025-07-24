@@ -7,7 +7,7 @@ const Hero = ({ showIPOs = false }: { showIPOs?: boolean }) => {
   const ipoData = [
     {
       company: "SpaceX",
-      logo: "/lovable-uploads/2a11e205-6972-4211-810a-a0511eb86512.png",
+      logo: "/lovable-uploads/0373420a-1f6b-4839-b969-8262802a98ed.png",
       name: "SpaceX",
       valuation: "$180B",
       status: "Expected 2025",
@@ -18,7 +18,7 @@ const Hero = ({ showIPOs = false }: { showIPOs?: boolean }) => {
     },
     {
       company: "OpenAI",
-      logo: "/lovable-uploads/c6276a68-db62-4bd5-b3e8-eedc1d2c7f13.png",
+      logo: "/lovable-uploads/0fbba8a6-e14b-4a92-b576-62e38d4c60b4.png",
       name: "OpenAI",
       valuation: "$157B",
       status: "Expected 2025",
@@ -29,7 +29,7 @@ const Hero = ({ showIPOs = false }: { showIPOs?: boolean }) => {
     },
     {
       company: "Revolut",
-      logo: "/lovable-uploads/4dcaf7c3-9230-4b8d-b0b3-384f45a53768.png",
+      logo: "/lovable-uploads/5f571af0-9556-41dc-a8e8-f3bd38d39d4c.png",
       name: "Revolut",
       valuation: "$45B",
       status: "Expected 2024",

@@ -5,7 +5,7 @@ const PrivateEquityData = () => {
   const equityData = [
     {
       company: "SpaceX",
-      logo: "https://images.unsplash.com/photo-1517976487492-5750f3195933?w=400&h=400&fit=crop", // Rocket/space themed
+      logo: "/lovable-uploads/0373420a-1f6b-4839-b969-8262802a98ed.png",
       logoColor: "bg-gray-900",
       cardColor: "bg-gray-900/90 border-gray-900/20",
       textColor: "text-white",
@@ -19,7 +19,7 @@ const PrivateEquityData = () => {
     },
     {
       company: "OpenAI",
-      logo: "https://images.unsplash.com/photo-1677442136019-21780ecad995?w=400&h=400&fit=crop", // AI/tech themed
+      logo: "/lovable-uploads/0fbba8a6-e14b-4a92-b576-62e38d4c60b4.png",
       logoColor: "bg-green-600",
       cardColor: "bg-green-600/90 border-green-600/20",
       textColor: "text-white",
@@ -33,7 +33,7 @@ const PrivateEquityData = () => {
     },
     {
       company: "Revolut",
-      logo: "https://images.unsplash.com/photo-1563013544-824ae1b704d3?w=400&h=400&fit=crop", // Fintech themed
+      logo: "/lovable-uploads/5f571af0-9556-41dc-a8e8-f3bd38d39d4c.png",
       logoColor: "bg-blue-500",
       cardColor: "bg-blue-500/90 border-blue-500/20",
       textColor: "text-white",
