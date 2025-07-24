@@ -4,56 +4,53 @@ import { TrendingUp, Shield, Zap, Globe } from "lucide-react";
 import { Badge } from "@/components/ui/badge";
 
 const Hero = () => {
-  const ipoData = [
+  const bondsData = [
     {
-      company: "SpaceX",
+      bank: "Deutsche Bank",
       logo: "/lovable-uploads/2a11e205-6972-4211-810a-a0511eb86512.png",
-      logoColor: "bg-gray-900",
-      name: "SpaceX",
-      valuation: "$180B",
-      status: "Expected 2025",
-      statusColor: "bg-blue-100 text-blue-700",
-      sector: "Aerospace",
-      expectedPrice: "$85-95",
-      id: "spacex"
+      name: "Deutsche Bank 10%",
+      yield: "10%",
+      rating: "A-",
+      ratingColor: "bg-green-100 text-green-700",
+      currency: "EUR",
+      maturity: "14/11/2049",
+      id: "deutsche"
     },
     {
-      company: "OpenAI",
+      bank: "Barclays",
       logo: "/lovable-uploads/c6276a68-db62-4bd5-b3e8-eedc1d2c7f13.png",
-      logoColor: "bg-green-600",
-      name: "OpenAI",
-      valuation: "$157B",
-      status: "Expected 2025",
-      statusColor: "bg-blue-100 text-blue-700",
-      sector: "AI/Tech",
-      expectedPrice: "$120-140",
-      id: "openai"
+      name: "Barclays 9.625%",
+      yield: "9.625%",
+      rating: "A",
+      ratingColor: "bg-green-100 text-green-700",
+      currency: "USD",
+      maturity: "22/11/2049",
+      id: "barclays"
     },
     {
-      company: "Revolut",
+      bank: "Santander",
       logo: "/lovable-uploads/4dcaf7c3-9230-4b8d-b0b3-384f45a53768.png",
-      logoColor: "bg-blue-600",
-      name: "Revolut",
-      valuation: "$45B",
-      status: "Expected 2024",
-      statusColor: "bg-green-100 text-green-700",
-      sector: "FinTech",
-      expectedPrice: "$28-35",
-      id: "revolut"
+      name: "Santander 9.625%",
+      yield: "9.625%",
+      rating: "A",
+      ratingColor: "bg-green-100 text-green-700",
+      currency: "USD",
+      maturity: "21/11/2049",
+      id: "santander"
     }
   ];
 
-  const scrollToMarketData = (ipoId: string) => {
+  const scrollToMarketData = (bondId: string) => {
     const marketDataSection = document.getElementById('market-data');
     if (marketDataSection) {
       marketDataSection.scrollIntoView({ behavior: 'smooth' });
-      // Add a small delay to highlight the specific IPO
+      // Add a small delay to highlight the specific bond
       setTimeout(() => {
-        const ipoCard = document.getElementById(`ipo-${ipoId}`);
-        if (ipoCard) {
-          ipoCard.classList.add('ring-2', 'ring-primary', 'ring-offset-2');
+        const bondCard = document.getElementById(`bond-${bondId}`);
+        if (bondCard) {
+          bondCard.classList.add('ring-2', 'ring-primary', 'ring-offset-2');
           setTimeout(() => {
-            ipoCard.classList.remove('ring-2', 'ring-primary', 'ring-offset-2');
+            bondCard.classList.remove('ring-2', 'ring-primary', 'ring-offset-2');
           }, 2000);
         }
       }, 500);
@@ -100,26 +97,26 @@ const Hero = () => {
           <div className="space-y-6">
             {/* High Yield Bonds Card */}
             <div className="bg-white rounded-2xl shadow-2xl p-8 border border-black">
-              <h3 className="text-lg font-semibold text-gray-900 mb-4">Coming Soon</h3>
+              <h3 className="text-lg font-semibold text-gray-900 mb-4">High Yield Bonds</h3>
               <div className="space-y-3">
-                {ipoData.map((ipo, index) => (
+                {bondsData.map((bond, index) => (
                   <div 
                     key={index}
                     className="flex justify-between items-center py-2 border-b border-gray-100 last:border-b-0 cursor-pointer hover:bg-gray-50 rounded px-2 transition-colors"
-                    onClick={() => scrollToMarketData(ipo.id)}
+                    onClick={() => scrollToMarketData(bond.id)}
                   >
                     <div className="flex items-center space-x-3">
                       <div className="w-8 h-8 bg-white rounded border flex items-center justify-center">
-                        <img src={ipo.logo} alt={ipo.company} className="w-6 h-6 object-contain" />
+                        <img src={bond.logo} alt={bond.bank} className="w-6 h-6 object-contain" />
                       </div>
                       <div>
-                        <div className="font-medium text-sm">{ipo.name}</div>
-                        <div className="text-xs text-gray-500">{ipo.sector} • {ipo.expectedPrice}</div>
+                        <div className="font-medium text-sm">{bond.name}</div>
+                        <div className="text-xs text-gray-500">{bond.currency} • {bond.maturity}</div>
                       </div>
                     </div>
                     <div className="text-right">
-                      <div className="text-green-600 font-bold">{ipo.valuation}</div>
-                      <Badge variant="secondary" className={`${ipo.statusColor} text-xs`}>{ipo.status}</Badge>
+                      <div className="text-red-600 font-bold">{bond.yield}</div>
+                      <Badge variant="secondary" className={`${bond.ratingColor} text-xs`}>{bond.rating}</Badge>
                     </div>
                   </div>
                 ))}
