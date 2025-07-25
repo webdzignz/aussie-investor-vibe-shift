@@ -100,7 +100,7 @@ const Hero = ({ showIPOs = false, isFixedIncome = false }: { showIPOs?: boolean;
           <div>
             <h1 className="text-5xl font-bold mb-6 leading-tight">
               <span className={`${isFixedIncome ? "bg-navy-900 text-white px-4 py-1 rounded-lg block mb-2 text-3xl" : "text-gray-900"}`}>Welcome to</span>
-              <span className={`${isFixedIncome ? "text-navy-900" : "text-primary"} block text-6xl`}>The Rate Move</span>
+              <span className={`${isFixedIncome ? "text-navy-900" : "text-primary"} block text-6xl`}>The <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-purple-600">Rate</span> Move</span>
             </h1>
             <p className="text-xl text-gray-600 mb-8 leading-relaxed">
               Build wealth with confidence through our comprehensive investment platform. 
