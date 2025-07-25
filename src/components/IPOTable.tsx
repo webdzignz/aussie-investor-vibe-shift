@@ -17,7 +17,7 @@ const IPOTable = () => {
     },
     {
       company: "OpenAI",
-      logo: "/lovable-uploads/0fbba8a6-e14b-4a92-b576-62e38d4c60b4.png",
+      logo: "/lovable-uploads/2cbe9023-c5cd-4088-a6f5-e1ad701cc9e2.png",
       logoColor: "bg-green-600",
       name: "OpenAI Series C",
       valuation: "$157B",
@@ -28,7 +28,7 @@ const IPOTable = () => {
     },
     {
       company: "Revolut",
-      logo: "/lovable-uploads/5f571af0-9556-41dc-a8e8-f3bd38d39d4c.png",
+      logo: "/lovable-uploads/1dea8d6a-2e66-4030-863d-ed493b432712.png",
       logoColor: "bg-blue-500",
       name: "Revolut Series E",
       valuation: "$45B",

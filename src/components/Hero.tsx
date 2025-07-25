@@ -18,7 +18,7 @@ const Hero = ({ showIPOs = false }: { showIPOs?: boolean }) => {
     },
     {
       company: "OpenAI",
-      logo: "/lovable-uploads/0fbba8a6-e14b-4a92-b576-62e38d4c60b4.png",
+      logo: "/lovable-uploads/2cbe9023-c5cd-4088-a6f5-e1ad701cc9e2.png",
       name: "OpenAI",
       valuation: "$157B",
       status: "Expected 2025/26",
@@ -29,7 +29,7 @@ const Hero = ({ showIPOs = false }: { showIPOs?: boolean }) => {
     },
     {
       company: "Revolut",
-      logo: "/lovable-uploads/5f571af0-9556-41dc-a8e8-f3bd38d39d4c.png",
+      logo: "/lovable-uploads/1dea8d6a-2e66-4030-863d-ed493b432712.png",
       name: "Revolut",
       valuation: "$45B",
       status: "Expected 2025/26",
