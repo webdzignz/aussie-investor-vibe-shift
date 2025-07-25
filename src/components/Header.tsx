@@ -39,7 +39,7 @@ const Header = ({ isFixedIncome = false, isPrivateEquity = false }: { isFixedInc
   };
 
   return (
-    <header className={`${isFixedIncome ? 'bg-navy-900' : isPrivateEquity ? 'bg-black' : 'bg-black'} border-b border-gray-800 shadow-sm rounded-2xl m-4`}>
+    <header className={`${isFixedIncome ? 'bg-navy-900' : 'bg-black'} border-b border-gray-800 shadow-sm rounded-2xl m-4`}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
           <div className="flex items-center space-x-4">
