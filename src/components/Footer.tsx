@@ -10,7 +10,7 @@ const Footer = () => {
               <div className="w-8 h-8 gold-gradient rounded-lg flex items-center justify-center">
                 <MapPin className="w-5 h-5 text-white" />
               </div>
-              <span className="text-xl font-bold text-white">Rate Discovery</span>
+              <span className="text-xl font-bold text-white">The Rate Move</span>
             </div>
             <p className="text-gray-400 mb-6 leading-relaxed">
               Empowering Australian investors with cutting-edge tools, expert insights, 
@@ -55,7 +55,7 @@ const Footer = () => {
               </div>
               <div className="flex items-center space-x-3">
                 <Mail className="w-4 h-4 text-gray-400" />
-                <span>support@australianinvestor.com.au</span>
+                <span>support@theratem0ve.com.au</span>
               </div>
               <div className="flex items-start space-x-3">
                 <MapPin className="w-4 h-4 text-gray-400 mt-1" />
@@ -68,8 +68,8 @@ const Footer = () => {
         <div className="border-t border-gray-800 mt-12 pt-8">
           <div className="flex flex-col md:flex-row justify-between items-center">
             <p className="text-gray-400 text-sm">
-              © 2024 Rate Discovery. All rights reserved. AFSL 123456. 
-              Rate Discovery Pty Ltd is regulated by ASIC.
+              © 2024 The Rate Move. All rights reserved. AFSL 123456. 
+              The Rate Move Pty Ltd is regulated by ASIC.
             </p>
             <div className="flex space-x-6 mt-4 md:mt-0">
               <a href="#" className="text-gray-400 hover:text-white text-sm transition-colors">Privacy Policy</a>

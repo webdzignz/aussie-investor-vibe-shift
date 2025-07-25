@@ -99,8 +99,8 @@ const Hero = ({ showIPOs = false }: { showIPOs?: boolean }) => {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <div>
             <h1 className="text-5xl font-bold text-gray-900 mb-6 leading-tight">
-              Invest in Your
-              <span className="text-primary block">Australian Future</span>
+              Welcome to
+              <span className="text-primary block">The Rate Move</span>
             </h1>
             <p className="text-xl text-gray-600 mb-8 leading-relaxed">
               Build wealth with confidence through our comprehensive investment platform. 

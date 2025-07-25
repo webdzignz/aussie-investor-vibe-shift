@@ -44,7 +44,7 @@ const Header = () => {
                   className="w-5 h-4 object-contain"
                 />
               </div>
-              <span className="text-xl font-bold text-white">Rate Discovery</span>
+              <span className="text-xl font-bold text-white">The Rate Move</span>
             </div>
           </div>
           
