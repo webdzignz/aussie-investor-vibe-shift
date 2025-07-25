@@ -20,35 +20,35 @@ const CallToAction = ({ isFixedIncome = false }: { isFixedIncome?: boolean }) =>
           <h2 className={`text-3xl font-bold ${isFixedIncome ? 'text-navy-900' : 'text-white'} mb-2`}>Start Your Journey</h2>
           <p className={`${isFixedIncome ? 'text-navy-700' : 'text-white/90'} text-lg`}>Add details here</p>
         </div>
-        <Card className="max-w-6xl mx-auto bg-navy-900 backdrop-blur-sm border-navy-700">
+        <Card className={`max-w-6xl mx-auto ${isFixedIncome ? 'bg-navy-900 border-navy-700' : 'bg-white/95'} backdrop-blur-sm`}>
           <CardContent className="pt-6">
             <form onSubmit={handleSubmit} className="space-y-6">
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                 <div className="space-y-2">
-                  <Label htmlFor="firstName" className="text-white">First Name</Label>
-                  <Input id="firstName" placeholder="Enter your first name" required className="bg-white text-gray-900" />
+                  <Label htmlFor="firstName" className={isFixedIncome ? "text-white" : ""}>First Name</Label>
+                  <Input id="firstName" placeholder="Enter your first name" required className={isFixedIncome ? "bg-white text-gray-900" : ""} />
                 </div>
                 <div className="space-y-2">
-                  <Label htmlFor="lastName" className="text-white">Last Name</Label>
-                  <Input id="lastName" placeholder="Enter your last name" required className="bg-white text-gray-900" />
+                  <Label htmlFor="lastName" className={isFixedIncome ? "text-white" : ""}>Last Name</Label>
+                  <Input id="lastName" placeholder="Enter your last name" required className={isFixedIncome ? "bg-white text-gray-900" : ""} />
                 </div>
               </div>
 
               <div className="space-y-2">
-                <Label htmlFor="address" className="text-white">Address</Label>
-                <Textarea id="address" placeholder="Enter your full address" rows={2} required className="bg-white text-gray-900" />
+                <Label htmlFor="address" className={isFixedIncome ? "text-white" : ""}>Address</Label>
+                <Textarea id="address" placeholder="Enter your full address" rows={2} required className={isFixedIncome ? "bg-white text-gray-900" : ""} />
               </div>
 
               <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
                 <div className="space-y-2">
-                  <Label htmlFor="phone" className="text-white">Phone Number</Label>
-                  <Input id="phone" type="tel" placeholder="Enter your phone number" required className="bg-white text-gray-900" />
+                  <Label htmlFor="phone" className={isFixedIncome ? "text-white" : ""}>Phone Number</Label>
+                  <Input id="phone" type="tel" placeholder="Enter your phone number" required className={isFixedIncome ? "bg-white text-gray-900" : ""} />
                 </div>
 
                 <div className="space-y-2">
-                  <Label htmlFor="amount" className="text-white">Investment Amount (AUD)</Label>
+                  <Label htmlFor="amount" className={isFixedIncome ? "text-white" : ""}>Investment Amount (AUD)</Label>
                   <Select required>
-                    <SelectTrigger className="bg-white text-gray-900">
+                    <SelectTrigger className={isFixedIncome ? "bg-white text-gray-900" : ""}>
                       <SelectValue placeholder="Select amount" />
                     </SelectTrigger>
                     <SelectContent>
@@ -62,9 +62,9 @@ const CallToAction = ({ isFixedIncome = false }: { isFixedIncome?: boolean }) =>
                 </div>
 
                 <div className="space-y-2">
-                  <Label htmlFor="timeframe" className="text-white">Investment Timeframe</Label>
+                  <Label htmlFor="timeframe" className={isFixedIncome ? "text-white" : ""}>Investment Timeframe</Label>
                   <Select required>
-                    <SelectTrigger className="bg-white text-gray-900">
+                    <SelectTrigger className={isFixedIncome ? "bg-white text-gray-900" : ""}>
                       <SelectValue placeholder="Select timeframe" />
                     </SelectTrigger>
                     <SelectContent>
