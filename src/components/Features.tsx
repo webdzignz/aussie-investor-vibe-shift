@@ -9,33 +9,33 @@ const Features = () => {
   const features = [
     {
       icon: BarChart3,
-      title: "Advanced Analytics",
-      description: "Get detailed insights into your portfolio performance with our comprehensive analytics dashboard."
+      title: "Yield Analytics",
+      description: "Comprehensive yield analysis and duration metrics to optimize your fixed income portfolio performance."
     },
     {
       icon: PieChart,
-      title: "Diversified Portfolios",
-      description: "Build balanced portfolios across ASX stocks, ETFs, and international markets with expert guidance."
+      title: "Bond Diversification",
+      description: "Build balanced portfolios across government bonds, corporate debt, and international fixed income securities."
     },
     {
       icon: TrendingUp,
-      title: "Real-time Market Data",
-      description: "Access live market data, price alerts, and professional-grade trading tools at your fingertips."
+      title: "Real-time Bond Pricing",
+      description: "Access live bond prices, yield curves, and professional-grade fixed income trading tools."
     },
     {
       icon: Shield,
-      title: "Secure & Regulated",
-      description: "Your investments are protected with bank-level security and full ASIC regulation compliance."
+      title: "Credit Risk Management",
+      description: "Your investments are protected with institutional-grade credit analysis and full regulatory compliance."
     },
     {
       icon: Smartphone,
-      title: "Mobile Trading",
-      description: "Trade on the go with our award-winning mobile app, featuring biometric security and instant notifications."
+      title: "Mobile Bond Trading",
+      description: "Trade bonds on the go with our secure mobile platform, featuring real-time yield calculations."
     },
     {
       icon: BookOpen,
-      title: "Educational Resources",
-      description: "Learn from market experts with our comprehensive library of guides, webinars, and market analysis."
+      title: "Fixed Income Education",
+      description: "Learn from bond market experts with guides, webinars, and comprehensive fixed income analysis."
     }
   ];
 
@@ -60,13 +60,13 @@ const Features = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <h2 className="text-4xl font-bold text-gray-900 mb-4">
-            Everything You Need to Invest Successfully
+            Everything You Need for Fixed Income Success
           </h2>
         </div>
 
         <div className="max-w-4xl mx-auto text-left mb-16">
           <p className="text-lg text-gray-700 leading-relaxed">
-            The Rate Move is a trusted financial intermediary with an extensive and carefully curated network of established financial partners. Over the past few years, it has steadily built a reputation for connecting investors with exclusive, high-potential opportunities—particularly in the IPO space. Through strategic introductions and deep industry relationships, The Rate Move has helped clients access early-stage investment deals that have gone on to generate substantial returns. Its track record speaks for itself: investors introduced through The Rate Move have frequently been involved in IPOs that delivered significant upside, solidifying its position as a go-to partner for those seeking access to serious wealth-building opportunities.
+            The Rate Move is a trusted financial intermediary specializing in fixed income securities with an extensive network of established bond dealers and institutional partners. Over the past few years, we have built a reputation for connecting investors with high-quality fixed income opportunities—from government bonds to corporate debt and structured products. Through strategic relationships with major financial institutions and deep market expertise, The Rate Move provides clients access to competitive yields and secure investment options. Our track record in fixed income markets speaks for itself: clients benefit from carefully curated bond portfolios that deliver consistent returns and capital preservation, establishing us as a premier partner for income-focused investors.
           </p>
         </div>
         
