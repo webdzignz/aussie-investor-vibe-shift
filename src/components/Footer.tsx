@@ -61,7 +61,7 @@ const Footer = ({ isFixedIncome = false }: { isFixedIncome?: boolean }) => {
               </div>
               <div className="flex items-center space-x-3">
                 <Mail className="w-4 h-4 text-gray-400" />
-                <span>support@theratem0ve.com.au</span>
+                <span>support@theratemove.com</span>
               </div>
               <div className="flex items-start space-x-3">
                 <MapPin className="w-4 h-4 text-gray-400 mt-1" />
