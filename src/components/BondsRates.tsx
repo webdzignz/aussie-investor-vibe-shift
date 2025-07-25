@@ -83,7 +83,7 @@ const BondsRates = () => {
           <CardContent>
             <Table>
               <TableHeader>
-                <TableRow className="bg-primary text-primary-foreground hover:bg-primary">
+                <TableRow className="bg-navy-900 text-white hover:bg-navy-900">
                   <TableHead className="text-white font-semibold">Bond</TableHead>
                   <TableHead className="text-white font-semibold">Yield</TableHead>
                   <TableHead className="text-white font-semibold">Rating</TableHead>
