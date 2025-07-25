@@ -78,7 +78,7 @@ const CallToAction = ({ isFixedIncome = false }: { isFixedIncome?: boolean }) =>
                 </div>
               </div>
 
-              <Button type="submit" size="lg" className="w-full bg-blue-400 text-white hover:bg-blue-500 text-lg font-semibold">
+              <Button type="submit" size="lg" className={`w-full ${isFixedIncome ? 'bg-blue-400 text-white hover:bg-blue-500' : 'bg-yellow-500 text-black hover:bg-yellow-600'} text-lg font-semibold`}>
                 Start My Investment Journey
                 <ArrowRight className="w-5 h-5 ml-2" />
               </Button>
