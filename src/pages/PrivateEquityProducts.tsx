@@ -9,7 +9,7 @@ import Footer from "@/components/Footer";
 const PrivateEquityProducts = () => {
   return (
     <div className="min-h-screen bg-background">
-      <Header />
+      <Header isPrivateEquity={true} />
       <Hero showIPOs={true} />
       <Features />
       <PrivateEquityData />

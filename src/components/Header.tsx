@@ -3,7 +3,7 @@ import { Button } from "@/components/ui/button";
 import { User, Menu, Home } from "lucide-react";
 import { useNavigate } from "react-router-dom";
 
-const Header = ({ isFixedIncome = false }: { isFixedIncome?: boolean }) => {
+const Header = ({ isFixedIncome = false, isPrivateEquity = false }: { isFixedIncome?: boolean; isPrivateEquity?: boolean }) => {
   const navigate = useNavigate();
 
   const goToHome = () => {
@@ -39,7 +39,7 @@ const Header = ({ isFixedIncome = false }: { isFixedIncome?: boolean }) => {
   };
 
   return (
-    <header className={`${isFixedIncome ? 'bg-navy-900' : 'bg-black'} border-b border-gray-800 shadow-sm rounded-2xl m-4`}>
+    <header className={`${isFixedIncome ? 'bg-navy-900' : isPrivateEquity ? 'bg-black' : 'bg-black'} border-b border-gray-800 shadow-sm rounded-2xl m-4`}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
           <div className="flex items-center space-x-4">
@@ -90,7 +90,7 @@ const Header = ({ isFixedIncome = false }: { isFixedIncome?: boolean }) => {
               <User className="w-4 h-4 mr-2" />
               Sign In
             </Button>
-            <Button onClick={scrollToForm} className="bg-blue-400 text-white border-0 hover:bg-blue-500">
+            <Button onClick={scrollToForm} className={`${isPrivateEquity ? 'bg-yellow-500 text-black hover:bg-yellow-600' : 'bg-blue-400 text-white hover:bg-blue-500'} border-0`}>
               Get Started
             </Button>
             <Button variant="ghost" size="sm" className="md:hidden text-gray-300 hover:text-white hover:bg-gray-800">
