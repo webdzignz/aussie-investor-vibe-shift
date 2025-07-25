@@ -44,7 +44,9 @@ const Header = ({ isFixedIncome = false }: { isFixedIncome?: boolean }) => {
                   className="w-5 h-4 object-contain"
                 />
               </div>
-              <span className="text-xl font-bold text-white">The Rate Move</span>
+              <span className="text-xl font-bold text-white">
+                The <span className="font-ink-free">Rate</span> Move
+              </span>
             </div>
           </div>
           
