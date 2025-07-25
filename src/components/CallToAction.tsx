@@ -20,35 +20,35 @@ const CallToAction = ({ isFixedIncome = false }: { isFixedIncome?: boolean }) =>
           <h2 className={`text-3xl font-bold ${isFixedIncome ? 'text-navy-900' : 'text-white'} mb-2`}>Start Your Journey</h2>
           <p className={`${isFixedIncome ? 'text-navy-700' : 'text-white/90'} text-lg`}>Add details here</p>
         </div>
-        <Card className="max-w-6xl mx-auto bg-white/95 backdrop-blur-sm">
+        <Card className="max-w-6xl mx-auto bg-navy-900 backdrop-blur-sm border-navy-700">
           <CardContent className="pt-6">
             <form onSubmit={handleSubmit} className="space-y-6">
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                 <div className="space-y-2">
-                  <Label htmlFor="firstName">First Name</Label>
-                  <Input id="firstName" placeholder="Enter your first name" required />
+                  <Label htmlFor="firstName" className="text-white">First Name</Label>
+                  <Input id="firstName" placeholder="Enter your first name" required className="bg-white text-gray-900" />
                 </div>
                 <div className="space-y-2">
-                  <Label htmlFor="lastName">Last Name</Label>
-                  <Input id="lastName" placeholder="Enter your last name" required />
+                  <Label htmlFor="lastName" className="text-white">Last Name</Label>
+                  <Input id="lastName" placeholder="Enter your last name" required className="bg-white text-gray-900" />
                 </div>
               </div>
 
               <div className="space-y-2">
-                <Label htmlFor="address">Address</Label>
-                <Textarea id="address" placeholder="Enter your full address" rows={2} required />
+                <Label htmlFor="address" className="text-white">Address</Label>
+                <Textarea id="address" placeholder="Enter your full address" rows={2} required className="bg-white text-gray-900" />
               </div>
 
               <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
                 <div className="space-y-2">
-                  <Label htmlFor="phone">Phone Number</Label>
-                  <Input id="phone" type="tel" placeholder="Enter your phone number" required />
+                  <Label htmlFor="phone" className="text-white">Phone Number</Label>
+                  <Input id="phone" type="tel" placeholder="Enter your phone number" required className="bg-white text-gray-900" />
                 </div>
 
                 <div className="space-y-2">
-                  <Label htmlFor="amount">Investment Amount (AUD)</Label>
+                  <Label htmlFor="amount" className="text-white">Investment Amount (AUD)</Label>
                   <Select required>
-                    <SelectTrigger>
+                    <SelectTrigger className="bg-white text-gray-900">
                       <SelectValue placeholder="Select amount" />
                     </SelectTrigger>
                     <SelectContent>
@@ -62,9 +62,9 @@ const CallToAction = ({ isFixedIncome = false }: { isFixedIncome?: boolean }) =>
                 </div>
 
                 <div className="space-y-2">
-                  <Label htmlFor="timeframe">Investment Timeframe</Label>
+                  <Label htmlFor="timeframe" className="text-white">Investment Timeframe</Label>
                   <Select required>
-                    <SelectTrigger>
+                    <SelectTrigger className="bg-white text-gray-900">
                       <SelectValue placeholder="Select timeframe" />
                     </SelectTrigger>
                     <SelectContent>
