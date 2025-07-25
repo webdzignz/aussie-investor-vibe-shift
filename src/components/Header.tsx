@@ -90,7 +90,7 @@ const Header = ({ isFixedIncome = false }: { isFixedIncome?: boolean }) => {
               <User className="w-4 h-4 mr-2" />
               Sign In
             </Button>
-            <Button onClick={scrollToForm} className="gold-gradient text-white border-0 hover:opacity-90">
+            <Button onClick={scrollToForm} className="bg-blue-400 text-white border-0 hover:bg-blue-500">
               Get Started
             </Button>
             <Button variant="ghost" size="sm" className="md:hidden text-gray-300 hover:text-white hover:bg-gray-800">
