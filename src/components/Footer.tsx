@@ -7,10 +7,16 @@ const Footer = ({ isFixedIncome = false }: { isFixedIncome?: boolean }) => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           <div>
             <div className="flex items-center space-x-2 mb-6">
-              <div className="w-8 h-8 gold-gradient rounded-lg flex items-center justify-center">
-                <MapPin className="w-5 h-5 text-white" />
+              <div className="w-8 h-8 bg-white rounded-lg flex items-center justify-center">
+                <img 
+                  src="/lovable-uploads/1472ad70-7fe5-477b-88d5-67ae021f7dc8.png" 
+                  alt="Australia"
+                  className="w-5 h-4 object-contain"
+                />
               </div>
-              <span className="text-xl font-bold text-white">The Rate Move</span>
+              <span className="text-xl font-bold text-white">
+                The <span className="font-ink-free">Rate</span> Move
+              </span>
             </div>
             <p className="text-gray-400 mb-6 leading-relaxed">
               Empowering Australian investors with cutting-edge tools, expert insights, 
