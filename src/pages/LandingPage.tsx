@@ -19,10 +19,10 @@ const LandingPage = () => {
         </div>
         
         <div className="grid md:grid-cols-2 gap-8">
-          <Card className="hover:shadow-lg transition-shadow cursor-pointer bg-gradient-to-br from-blue-900 to-blue-800 border-blue-700" onClick={() => navigate('/fixed-term')}>
+          <Card className="hover:shadow-lg transition-shadow cursor-pointer bg-gradient-to-br from-navy-900 to-navy-800 border-navy-700" onClick={() => navigate('/fixed-term')}>
             <CardHeader className="text-center">
-              <div className="mx-auto mb-4 p-3 bg-blue-300 rounded-full w-fit">
-                <TrendingUp className="h-8 w-8 text-blue-900" />
+              <div className="mx-auto mb-4 p-3 bg-white rounded-full w-fit">
+                <TrendingUp className="h-8 w-8 text-navy-900" />
               </div>
               <CardTitle className="text-2xl text-white">Fixed Term Products</CardTitle>
               <CardDescription className="text-lg text-blue-100">
@@ -30,7 +30,7 @@ const LandingPage = () => {
               </CardDescription>
             </CardHeader>
             <CardContent className="text-center">
-              <Button size="lg" className="w-full bg-blue-300 hover:bg-blue-200 text-blue-900">
+              <Button size="lg" className="w-full bg-white hover:bg-gray-50 text-navy-900 border border-navy-900">
                 Explore Fixed Term Products
               </Button>
             </CardContent>
