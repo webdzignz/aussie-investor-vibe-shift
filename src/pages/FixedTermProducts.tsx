@@ -9,13 +9,13 @@ import Footer from "@/components/Footer";
 const FixedTermProducts = () => {
   return (
     <div className="min-h-screen bg-background">
-      <Header />
-      <Hero />
-      <Features />
+      <Header isFixedIncome={true} />
+      <Hero isFixedIncome={true} />
+      <Features isFixedIncome={true} />
       <MarketData />
       <BondsRates />
-      <CallToAction />
-      <Footer />
+      <CallToAction isFixedIncome={true} />
+      <Footer isFixedIncome={true} />
     </div>
   );
 };

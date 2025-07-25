@@ -6,7 +6,7 @@ import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@
 import { Textarea } from "@/components/ui/textarea";
 import { ArrowRight } from "lucide-react";
 
-const CallToAction = () => {
+const CallToAction = ({ isFixedIncome = false }: { isFixedIncome?: boolean }) => {
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     // Handle form submission
@@ -14,11 +14,11 @@ const CallToAction = () => {
   };
 
   return (
-    <section className="py-16 bg-green-800">
+    <section className={`py-16 ${isFixedIncome ? 'bg-blue-50' : 'bg-green-800'}`}>
       <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-8">
-          <h2 className="text-3xl font-bold text-white mb-2">Start Your Journey</h2>
-          <p className="text-white/90 text-lg">Add details here</p>
+          <h2 className={`text-3xl font-bold ${isFixedIncome ? 'text-navy-900' : 'text-white'} mb-2`}>Start Your Journey</h2>
+          <p className={`${isFixedIncome ? 'text-navy-700' : 'text-white/90'} text-lg`}>Add details here</p>
         </div>
         <Card className="max-w-6xl mx-auto bg-white/95 backdrop-blur-sm">
           <CardContent className="pt-6">

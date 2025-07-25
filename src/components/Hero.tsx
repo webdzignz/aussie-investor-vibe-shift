@@ -3,7 +3,7 @@ import { Button } from "@/components/ui/button";
 import { TrendingUp, Shield, Zap, Globe } from "lucide-react";
 import { Badge } from "@/components/ui/badge";
 
-const Hero = ({ showIPOs = false }: { showIPOs?: boolean }) => {
+const Hero = ({ showIPOs = false, isFixedIncome = false }: { showIPOs?: boolean; isFixedIncome?: boolean }) => {
   const ipoData = [
     {
       company: "SpaceX",
@@ -94,7 +94,7 @@ const Hero = ({ showIPOs = false }: { showIPOs?: boolean }) => {
   };
 
   return (
-    <section className="bg-gradient-to-br from-green-50 to-green-100 py-20">
+    <section className={`${isFixedIncome ? 'bg-gradient-to-br from-blue-50 to-blue-100' : 'bg-gradient-to-br from-green-50 to-green-100'} py-20`}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <div>
@@ -107,10 +107,10 @@ const Hero = ({ showIPOs = false }: { showIPOs?: boolean }) => {
               Access ASX markets, international opportunities, and expert insights tailored for Australian investors.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 mb-8">
-              <Button size="lg" className="bg-primary text-primary-foreground hover:bg-primary/90 px-8 py-4 text-lg">
+              <Button size="lg" className={`${isFixedIncome ? 'bg-navy-900 text-white hover:bg-navy-800' : 'bg-primary text-primary-foreground hover:bg-primary/90'} px-8 py-4 text-lg`}>
                 Start Investing Today
               </Button>
-              <Button size="lg" className="bg-gold text-gold-foreground hover:bg-gold/90 px-8 py-4 text-lg">
+              <Button size="lg" className={`${isFixedIncome ? 'bg-white text-navy-900 hover:bg-gray-50 border border-navy-900' : 'bg-gold text-gold-foreground hover:bg-gold/90'} px-8 py-4 text-lg`}>
                 Explore Platform
               </Button>
             </div>

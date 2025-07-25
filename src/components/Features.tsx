@@ -3,7 +3,7 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { BarChart3, PieChart, TrendingUp, Shield, Smartphone, BookOpen } from "lucide-react";
 import { useState, useEffect } from "react";
 
-const Features = () => {
+const Features = ({ isFixedIncome = false }: { isFixedIncome?: boolean }) => {
   const [currentGroupIndex, setCurrentGroupIndex] = useState(0);
 
   const features = [
@@ -76,10 +76,10 @@ const Features = () => {
             return (
               <Card 
                 key={`${currentGroupIndex}-${index}`}
-                className="bg-green-800 border border-green-700 shadow-lg hover:shadow-xl transition-all duration-1000 rounded-2xl animate-fade-in"
+                className={`${isFixedIncome ? 'bg-navy-900 border border-navy-700' : 'bg-green-800 border border-green-700'} shadow-lg hover:shadow-xl transition-all duration-1000 rounded-2xl animate-fade-in`}
               >
                 <CardHeader className="text-center pb-4">
-                  <div className="w-16 h-16 gold-gradient rounded-2xl flex items-center justify-center mx-auto mb-4">
+                  <div className={`w-16 h-16 ${isFixedIncome ? 'bg-blue-500' : 'gold-gradient'} rounded-2xl flex items-center justify-center mx-auto mb-4`}>
                     <IconComponent className="w-8 h-8 text-white" />
                   </div>
                   <CardTitle className="text-xl font-semibold text-white">

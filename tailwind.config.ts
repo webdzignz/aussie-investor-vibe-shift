@@ -68,6 +68,11 @@ export default {
 					foreground: 'hsl(var(--gold-foreground))',
 					light: 'hsl(var(--gold-light))',
 					dark: 'hsl(var(--gold-dark))'
+				},
+				navy: {
+					'700': '#1e3a8a',
+					'800': '#1e40af', 
+					'900': '#1e293b'
 				}
 			},
 			borderRadius: {

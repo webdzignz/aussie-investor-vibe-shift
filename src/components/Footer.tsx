@@ -1,8 +1,8 @@
 import { MapPin, Mail, Phone, Facebook, Twitter, Linkedin, Instagram } from "lucide-react";
 
-const Footer = () => {
+const Footer = ({ isFixedIncome = false }: { isFixedIncome?: boolean }) => {
   return (
-    <footer className="bg-black text-gray-300">
+    <footer className={`${isFixedIncome ? 'bg-navy-900' : 'bg-black'} text-gray-300`}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           <div>
