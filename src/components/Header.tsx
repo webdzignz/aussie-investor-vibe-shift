@@ -31,6 +31,13 @@ const Header = ({ isFixedIncome = false }: { isFixedIncome?: boolean }) => {
     }
   };
 
+  const scrollToForm = () => {
+    const formSection = document.getElementById('get-started-form');
+    if (formSection) {
+      formSection.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
   return (
     <header className={`${isFixedIncome ? 'bg-navy-900' : 'bg-black'} border-b border-gray-800 shadow-sm rounded-2xl m-4`}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -83,7 +90,7 @@ const Header = ({ isFixedIncome = false }: { isFixedIncome?: boolean }) => {
               <User className="w-4 h-4 mr-2" />
               Sign In
             </Button>
-            <Button className="gold-gradient text-white border-0 hover:opacity-90">
+            <Button onClick={scrollToForm} className="gold-gradient text-white border-0 hover:opacity-90">
               Get Started
             </Button>
             <Button variant="ghost" size="sm" className="md:hidden text-gray-300 hover:text-white hover:bg-gray-800">

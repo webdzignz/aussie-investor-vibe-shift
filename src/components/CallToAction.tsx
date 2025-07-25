@@ -14,7 +14,7 @@ const CallToAction = ({ isFixedIncome = false }: { isFixedIncome?: boolean }) =>
   };
 
   return (
-    <section className={`py-16 ${isFixedIncome ? 'bg-blue-50' : 'bg-green-800'}`}>
+    <section id="get-started-form" className={`py-16 ${isFixedIncome ? 'bg-blue-50' : 'bg-green-800'}`}>
       <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-8">
           <h2 className={`text-3xl font-bold ${isFixedIncome ? 'text-navy-900' : 'text-white'} mb-2`}>Start Your Journey</h2>
