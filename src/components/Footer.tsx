@@ -15,7 +15,7 @@ const Footer = ({ isFixedIncome = false }: { isFixedIncome?: boolean }) => {
                 />
               </div>
               <span className="text-xl font-bold text-white">
-                The <span className="font-ink-free">Rate</span> Choice
+                The <span className="font-ink-free">Rate</span> Time
               </span>
             </div>
             <p className="text-gray-400 mb-6 leading-relaxed">
@@ -74,8 +74,8 @@ const Footer = ({ isFixedIncome = false }: { isFixedIncome?: boolean }) => {
         <div className="border-t border-gray-800 mt-12 pt-8">
           <div className="flex flex-col md:flex-row justify-between items-center">
             <p className="text-gray-400 text-sm">
-              © 2024 The Rate Choice. All rights reserved. AFSL 123456. 
-              The Rate Choice Pty Ltd is regulated by ASIC.
+              © 2024 The Rate Time. All rights reserved. AFSL 123456. 
+              The Rate Time Pty Ltd is regulated by ASIC.
             </p>
             <div className="flex space-x-6 mt-4 md:mt-0">
               <a href="#" className="text-gray-400 hover:text-white text-sm transition-colors">Privacy Policy</a>

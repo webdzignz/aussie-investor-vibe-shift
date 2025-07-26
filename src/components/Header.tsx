@@ -52,7 +52,7 @@ const Header = ({ isFixedIncome = false, isPrivateEquity = false }: { isFixedInc
                 />
               </div>
               <span className="text-xl font-bold text-white">
-                The <span className="font-ink-free">Rate</span> Choice
+                The <span className="font-ink-free">Rate</span> Time
               </span>
             </div>
           </div>

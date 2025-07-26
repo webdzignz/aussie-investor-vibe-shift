@@ -11,7 +11,7 @@ const LandingPage = () => {
       <div className="max-w-4xl w-full">
         <div className="text-center mb-12">
           <h1 className="text-4xl md:text-6xl font-bold text-foreground mb-4">
-            The <span className="font-ink-free text-black">Rate</span> Choice
+            The <span className="font-ink-free text-black">Rate</span> Time
           </h1>
           <p className="text-xl text-black">
             Choose your investment path
