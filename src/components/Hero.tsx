@@ -108,7 +108,7 @@ const Hero = ({ showIPOs = false, isFixedIncome = false }: { showIPOs?: boolean;
             <h1 className="text-5xl font-bold mb-6 leading-tight">
               <span className={`${isFixedIncome ? "bg-navy-900 text-white px-4 py-1 rounded-lg block mb-2 text-3xl" : "bg-green-800 text-white px-4 py-1 rounded-lg block mb-2 text-3xl"}`}>Welcome to</span>
               <span className={`${isFixedIncome ? "text-navy-900" : "text-primary"} block text-6xl`}>
-                The <span className="font-ink-free">Rate</span> Choice
+                The <span className="font-ink-free text-yellow-500">Rate</span> Choice
               </span>
             </h1>
             <p className="text-xl text-gray-600 mb-8 leading-relaxed">
