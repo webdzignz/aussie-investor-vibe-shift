@@ -18,7 +18,7 @@ const Hero = ({ showIPOs = false, isFixedIncome = false }: { showIPOs?: boolean;
     },
     {
       company: "OpenAI",
-      logo: "/lovable-uploads/2cbe9023-c5cd-4088-a6f5-e1ad701cc9e2.png",
+      logo: "/lovable-uploads/0bb92d76-1ed8-44bc-85c1-8162d1b5953b.png",
       name: "OpenAI",
       valuation: "$157B",
       status: "Expected 2025/26",
