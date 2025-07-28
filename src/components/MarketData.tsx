@@ -97,8 +97,8 @@ const MarketData = () => {
             >
               <CardHeader className="pb-3">
                 <div className="flex items-center justify-between mb-2 relative z-10">
-                  <div className={`w-12 h-12 ${bond.logoColor} rounded-lg border flex items-center justify-center shadow-lg`}>
-                    <img src={bond.logo} alt={bond.bank} className="w-8 h-8 object-contain" />
+                  <div className={`w-16 h-16 ${bond.logoColor} rounded-lg border flex items-center justify-center shadow-lg`}>
+                    <img src={bond.logo} alt={bond.bank} className="w-10 h-10 object-contain" />
                   </div>
                   <Badge variant="secondary" className={`${bond.ratingColor} font-medium shadow-sm`}>
                     {bond.rating}
