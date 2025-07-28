@@ -86,7 +86,7 @@ const Header = ({ isFixedIncome = false, isPrivateEquity = false }: { isFixedInc
           </nav>
 
           <div className="flex items-center space-x-4">
-            <Button variant="outline" size="sm" className="hidden md:flex border-green-800 text-white bg-green-800 hover:bg-green-700 hover:text-white">
+            <Button variant="outline" size="sm" className={`hidden md:flex ${isFixedIncome ? 'border-white text-navy-900 bg-white hover:bg-gray-100 hover:text-navy-900' : 'border-green-800 text-white bg-green-800 hover:bg-green-700 hover:text-white'}`}>
               <User className="w-4 h-4 mr-2" />
               Sign In
             </Button>
