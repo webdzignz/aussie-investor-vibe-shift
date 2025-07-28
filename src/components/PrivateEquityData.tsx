@@ -5,7 +5,7 @@ const PrivateEquityData = () => {
   const equityData = [
     {
       company: "SpaceX",
-      logo: "/lovable-uploads/49b8c0b2-59cd-4330-bb23-abaa12c3cd87.png",
+      logo: "/lovable-uploads/d925c00c-7720-4c4e-9f93-7c7f78551634.png",
       logoColor: "bg-gray-900",
       cardColor: "bg-black/90 border-black/20",
       textColor: "text-white",

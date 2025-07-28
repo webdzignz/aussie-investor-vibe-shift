@@ -6,7 +6,7 @@ const IPOTable = () => {
   const ipoData = [
     {
       company: "SpaceX",
-      logo: "/lovable-uploads/49b8c0b2-59cd-4330-bb23-abaa12c3cd87.png",
+      logo: "/lovable-uploads/d925c00c-7720-4c4e-9f93-7c7f78551634.png",
       logoColor: "bg-gray-900",
       name: "SpaceX Series N",
       valuation: "$180B",
