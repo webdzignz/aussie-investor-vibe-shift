@@ -74,7 +74,7 @@ const BondsRates = () => {
           </p>
         </div>
 
-        <Card className="shadow-lg border-gold/10">
+        <Card className="relative overflow-hidden bg-gradient-to-br from-white via-gray-50 to-white shadow-[0_25px_60px_-15px_rgba(0,0,0,0.3)] border border-gray-200/50 hover:shadow-[0_35px_80px_-15px_rgba(0,0,0,0.4)] transition-all duration-500 before:absolute before:inset-0 before:bg-gradient-to-r before:from-transparent before:via-white/10 before:to-transparent before:translate-x-[-100%] hover:before:translate-x-[100%] before:transition-transform before:duration-1000">
           <CardHeader>
             <CardTitle className="text-2xl font-semibold text-gray-900">
               Best Performers

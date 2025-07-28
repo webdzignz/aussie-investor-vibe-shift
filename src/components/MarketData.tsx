@@ -93,36 +93,36 @@ const MarketData = () => {
             <Card 
               key={index} 
               id={`bond-${bond.id}`}
-              className={`shadow-lg ${bond.cardColor} hover:shadow-xl transition-all duration-300 border rounded-2xl`}
+              className="group relative overflow-hidden bg-gradient-to-br from-white via-gray-50 to-white border border-gray-200/50 shadow-[0_20px_60px_-15px_rgba(0,0,0,0.3)] hover:shadow-[0_30px_80px_-15px_rgba(0,0,0,0.4)] transition-all duration-500 rounded-2xl hover:scale-[1.02] before:absolute before:inset-0 before:bg-gradient-to-r before:from-transparent before:via-white/10 before:to-transparent before:translate-x-[-100%] hover:before:translate-x-[100%] before:transition-transform before:duration-1000"
             >
               <CardHeader className="pb-3">
-                <div className="flex items-center justify-between mb-2">
-                  <div className={`w-12 h-12 ${bond.logoColor} rounded-lg border flex items-center justify-center`}>
+                <div className="flex items-center justify-between mb-2 relative z-10">
+                  <div className={`w-12 h-12 ${bond.logoColor} rounded-lg border flex items-center justify-center shadow-lg`}>
                     <img src={bond.logo} alt={bond.bank} className="w-8 h-8 object-contain" />
                   </div>
-                  <Badge variant="secondary" className={`${bond.ratingColor} font-medium`}>
+                  <Badge variant="secondary" className={`${bond.ratingColor} font-medium shadow-sm`}>
                     {bond.rating}
                   </Badge>
                 </div>
-                <CardTitle className={`text-lg font-semibold ${bond.textColor} leading-tight`}>
+                <CardTitle className="text-lg font-semibold text-gray-900 leading-tight relative z-10">
                   {bond.name}
                 </CardTitle>
               </CardHeader>
-              <CardContent>
+              <CardContent className="relative z-10">
                 <div className="space-y-3">
                   <div className="text-center">
-                    <div className={`text-3xl font-bold ${bond.textColor} mb-1`}>{bond.yield}</div>
-                    <div className={`text-sm ${bond.textColor} opacity-80`}>Annual Yield</div>
+                    <div className="text-3xl font-bold text-gray-900 mb-1">{bond.yield}</div>
+                    <div className="text-sm text-gray-600 opacity-80">Annual Yield</div>
                   </div>
                   
                   <div className="space-y-2 text-sm">
                     <div className="flex justify-between">
-                      <span className={`${bond.textColor} opacity-80`}>Currency:</span>
-                      <span className={`font-medium ${bond.textColor}`}>{bond.currency}</span>
+                      <span className="text-gray-600 opacity-80">Currency:</span>
+                      <span className="font-medium text-gray-900">{bond.currency}</span>
                     </div>
                     <div className="flex justify-between">
-                      <span className={`${bond.textColor} opacity-80`}>Maturity:</span>
-                      <span className={`font-medium ${bond.textColor}`}>{bond.maturity}</span>
+                      <span className="text-gray-600 opacity-80">Maturity:</span>
+                      <span className="font-medium text-gray-900">{bond.maturity}</span>
                     </div>
                   </div>
                 </div>

@@ -2,7 +2,7 @@ import { MapPin, Mail, Phone } from "lucide-react";
 
 const Footer = ({ isFixedIncome = false }: { isFixedIncome?: boolean }) => {
   return (
-    <footer className={`${isFixedIncome ? 'bg-navy-900' : 'bg-black'} text-gray-300`}>
+    <footer className={`${isFixedIncome ? 'bg-gradient-to-br from-navy-900 via-navy-800 to-navy-900' : 'bg-gradient-to-br from-gray-900 via-black to-gray-900'} text-gray-300 relative overflow-hidden border-t border-gray-700/30 shadow-[0_-8px_32px_-8px_rgba(0,0,0,0.6)]`}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           <div>

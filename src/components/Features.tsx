@@ -76,7 +76,7 @@ const Features = ({ isFixedIncome = false }: { isFixedIncome?: boolean }) => {
             return (
               <Card 
                 key={`${currentGroupIndex}-${index}`}
-                className={`${isFixedIncome ? 'bg-white border border-gray-200' : 'bg-green-800 border border-green-700'} shadow-lg hover:shadow-xl transition-all duration-1000 rounded-2xl animate-fade-in`}
+                className={`group relative overflow-hidden ${isFixedIncome ? 'bg-gradient-to-br from-white via-gray-50 to-white border border-gray-200/50' : 'bg-gradient-to-br from-green-800 via-green-900 to-green-800 border border-green-700/50'} shadow-[0_20px_60px_-15px_rgba(0,0,0,0.3)] hover:shadow-[0_30px_80px_-15px_rgba(0,0,0,0.4)] transition-all duration-500 rounded-2xl hover:scale-[1.02] before:absolute before:inset-0 before:bg-gradient-to-r before:from-transparent before:via-white/10 before:to-transparent before:translate-x-[-100%] hover:before:translate-x-[100%] before:transition-transform before:duration-1000 animate-fade-in`}
               >
                 <CardHeader className="text-center pb-4">
                   <div className={`w-16 h-16 ${isFixedIncome ? 'bg-navy-900' : 'gold-gradient'} rounded-2xl flex items-center justify-center mx-auto mb-4`}>
