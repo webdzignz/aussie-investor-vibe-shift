@@ -154,8 +154,8 @@ const Hero = ({ showIPOs = false, isFixedIncome = false }: { showIPOs?: boolean;
                       onClick={() => scrollToMarketData(ipo.id)}
                     >
                       <div className="flex items-center space-x-3">
-                        <div className="w-16 h-16 bg-white rounded border flex items-center justify-center">
-                          <img src={ipo.logo} alt={ipo.company} className="w-14 h-14 object-contain" />
+                        <div className="w-16 h-16 bg-white rounded border-2 border-gray-200 flex items-center justify-center shadow-lg">
+                          <img src={ipo.logo} alt={ipo.company} className="w-12 h-12 object-contain filter contrast-125" />
                         </div>
                         <div>
                           <div className="font-medium text-base">{ipo.name}</div>
