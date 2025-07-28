@@ -125,6 +125,10 @@ const Hero = ({ showIPOs = false, isFixedIncome = false }: { showIPOs?: boolean;
             </div>
             <div className="flex items-center space-x-6 text-sm text-gray-600">
               <div className="flex items-center space-x-2">
+                <Shield className="w-4 h-4 text-gold" />
+                <span>Secure Platform</span>
+              </div>
+              <div className="flex items-center space-x-2">
                 <Zap className="w-4 h-4 text-gold" />
                 <span>Real-time Trading</span>
               </div>
