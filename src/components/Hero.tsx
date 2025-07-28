@@ -141,7 +141,7 @@ const Hero = ({ showIPOs = false, isFixedIncome = false }: { showIPOs?: boolean;
           
           <div className="space-y-6">
             {/* Dynamic Card - IPOs or Bonds */}
-            <div className="bg-white rounded-2xl shadow-2xl p-8 border border-black">
+            <div className="relative overflow-hidden bg-gradient-to-br from-white via-gray-50 to-white rounded-2xl shadow-[0_25px_60px_-15px_rgba(0,0,0,0.3)] p-8 border border-gray-200/50 hover:shadow-[0_35px_80px_-15px_rgba(0,0,0,0.4)] transition-all duration-500 before:absolute before:inset-0 before:bg-gradient-to-r before:from-transparent before:via-white/20 before:to-transparent before:translate-x-[-100%] hover:before:translate-x-[100%] before:transition-transform before:duration-1000 hover:scale-[1.01]">
               <h3 className="text-lg font-semibold text-gray-900 mb-4">
                 {showIPOs ? "Coming Soon" : "High Yield Bonds"}
               </h3>
