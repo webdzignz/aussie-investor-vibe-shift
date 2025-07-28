@@ -64,7 +64,7 @@ const PrivateEquityData = () => {
             <Card 
               key={index} 
               id={`equity-${equity.id}`}
-              className={`shadow-lg ${equity.cardColor} hover:shadow-xl transition-all duration-300 border rounded-2xl`}
+              className="group relative overflow-hidden rounded-2xl bg-gradient-to-br from-gray-900 via-black to-gray-800 border border-gray-700/50 shadow-2xl hover:shadow-[0_20px_60px_-15px_rgba(0,0,0,0.8)] transition-all duration-500 hover:scale-[1.02] hover:border-gray-600/60 before:absolute before:inset-0 before:bg-gradient-to-r before:from-transparent before:via-white/5 before:to-transparent before:translate-x-[-100%] hover:before:translate-x-[100%] before:transition-transform before:duration-1000"
             >
               <CardHeader className="pb-3">
                 <div className="flex items-center justify-between mb-2">
