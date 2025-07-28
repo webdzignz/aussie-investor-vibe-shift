@@ -7,7 +7,7 @@ const Hero = ({ showIPOs = false, isFixedIncome = false }: { showIPOs?: boolean;
   const ipoData = [
     {
       company: "SpaceX",
-      logo: "/lovable-uploads/d925c00c-7720-4c4e-9f93-7c7f78551634.png",
+      logo: "/lovable-uploads/ebf25f4b-c85a-4aa2-80cb-f5d67b539a7f.png",
       name: "SpaceX",
       valuation: "$180B",
       status: "Expected 2025/26",
