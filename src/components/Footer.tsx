@@ -1,4 +1,4 @@
-import { MapPin, Mail, Phone, Facebook, Twitter, Linkedin, Instagram } from "lucide-react";
+import { MapPin, Mail, Phone } from "lucide-react";
 
 const Footer = ({ isFixedIncome = false }: { isFixedIncome?: boolean }) => {
   return (
@@ -22,12 +22,6 @@ const Footer = ({ isFixedIncome = false }: { isFixedIncome?: boolean }) => {
               Empowering Australian investors with cutting-edge tools, expert insights, 
               and secure trading platforms to build lasting wealth.
             </p>
-            <div className="flex space-x-4">
-              <Facebook className="w-5 h-5 text-gray-400 hover:text-gold cursor-pointer transition-colors" />
-              <Twitter className="w-5 h-5 text-gray-400 hover:text-gold cursor-pointer transition-colors" />
-              <Linkedin className="w-5 h-5 text-gray-400 hover:text-gold cursor-pointer transition-colors" />
-              <Instagram className="w-5 h-5 text-gray-400 hover:text-gold cursor-pointer transition-colors" />
-            </div>
           </div>
           
           <div>
