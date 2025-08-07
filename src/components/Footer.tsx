@@ -51,7 +51,7 @@ const Footer = ({ isFixedIncome = false }: { isFixedIncome?: boolean }) => {
             <div className="space-y-4">
               <div className="flex items-center space-x-3">
                 <Phone className="w-4 h-4 text-gray-400" />
-                <span>1800 INVEST (1800 468 378)</span>
+                <span>+61 (0) 28317 3369</span>
               </div>
               <div className="flex items-center space-x-3">
                 <Mail className="w-4 h-4 text-gray-400" />
