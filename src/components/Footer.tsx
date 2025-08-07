@@ -59,7 +59,7 @@ const Footer = ({ isFixedIncome = false }: { isFixedIncome?: boolean }) => {
               </div>
               <div className="flex items-start space-x-3">
                 <MapPin className="w-4 h-4 text-gray-400 mt-1" />
-                <span>Level 42, Governor Phillip Tower<br />1 Farrer Place, Sydney NSW 2000</span>
+                <span>Sydney NSW 2000</span>
               </div>
             </div>
           </div>
